@@ -33,7 +33,9 @@ file(GLOB KERNEL_GLOB
      changelogs/linux413.html
      changelogs/linux414.html
      changelogs/linux415.html
-     changelogs/linux416.html)
+     changelogs/linux416.html
+     changelogs/linux418.html
+     changelogs/linux419.html)
 
 set(KERNEL_SRCS
     ${KERNEL_GLOB}
