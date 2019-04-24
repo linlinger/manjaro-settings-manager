@@ -113,7 +113,7 @@ void
 TimeDatePage::save()
 {
     TimeDateCommon::save( ui, m_timeDateService, m_isTimeEdited, m_isDateEdited, m_timeZone );
-    this -> setApplyEnabled( this, false );
     m_isTimeEdited = false;
     m_isDateEdited = false;
+    this -> setApplyEnabled( this, false );
 }

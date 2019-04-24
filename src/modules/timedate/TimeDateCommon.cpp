@@ -22,7 +22,6 @@
 #include "TimeZoneDialog.h"
 
 #include <QtCore/QTimeZone>
-#include <QDebug>
 
 QString
 TimeDateCommon::getName()

@@ -26,10 +26,9 @@ TimeDateService::TimeDateService( QObject* parent ) :
     QObject( parent )
 {
     m_dbusInterface = new QDBusInterface( "org.freedesktop.timedate1",
-                                         "/org/freedesktop/timedate1",
-                                         "org.freedesktop.timedate1",
-                                         QDBusConnection::systemBus(),
-                                         0 );
+                                          "/org/freedesktop/timedate1",
+                                          "org.freedesktop.timedate1",
+                                          QDBusConnection::systemBus() );
 }
 
 
