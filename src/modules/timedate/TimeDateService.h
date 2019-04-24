@@ -2,6 +2,7 @@
  *  This file is part of Manjaro Settings Manager.
  *
  *  Ramon Buldó <ramon@manjaro.org>
+ *  Kacper Piwiński
  *
  *  Manjaro Settings Manager is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -29,6 +30,7 @@
 class TimeDateService : public QObject
 {
     Q_OBJECT
+
 public:
     explicit TimeDateService( QObject* parent = 0 );
     ~TimeDateService();

@@ -27,21 +27,21 @@
 QString
 TimeDateCommon::getName()
 {
-    return QString( "msm_timedate" );
+    return "msm_timedate";
 }
 
 
 QString
 TimeDateCommon::getTitle()
 {
-    return QString( tr ( "Time and Date" ) );
+    return tr ( "Time and Date" );
 }
 
 
 QString
 TimeDateCommon::getDescription()
 {
-    return QString( tr ( "Time and date configuration" ) );
+    return tr ( "Time and date configuration" );
 }
 
 

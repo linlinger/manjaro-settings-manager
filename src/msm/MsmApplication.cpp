@@ -2,6 +2,7 @@
  *  This file is part of Manjaro Settings Manager.
  *
  *  Ramon Buldó <ramon@manjaro.org>
+ *  Kacper Piwiński
  *
  *  Manjaro Settings Manager is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -32,7 +33,7 @@ MsmApplication::MsmApplication( int& argc, char* argv[] )
     setOrganizationName( "Manjaro" );
     setOrganizationDomain( "Manjaro" );
     setApplicationName( "Manjaro Settings Manager" );
-    setApplicationVersion( "0.5.3" );
+    setApplicationVersion( "0.5.5" );
 }
 
 

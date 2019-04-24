@@ -2,6 +2,7 @@
  *  This file is part of Manjaro Settings Manager.
  *
  *  Ramon Buldó <ramon@manjaro.org>
+ *  Kacper Piwiński
  *
  *  Manjaro Settings Manager is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -20,12 +21,13 @@
 #ifndef TIMEZONEDIALOG_H
 #define TIMEZONEDIALOG_H
 
-#include <QDialog>
 #include "TimeZoneWidget.h"
+
+#include <QDialog>
 
 namespace Ui
 {
-class TimeZoneDialog;
+    class TimeZoneDialog;
 }
 
 class TimeZoneDialog : public QDialog
@@ -41,7 +43,6 @@ public:
 private:
     Ui::TimeZoneDialog* ui;
     TimeZoneWidget* m_timeZoneWidget;
-
     bool m_blockTimeZoneWidgetSet;
 };
 

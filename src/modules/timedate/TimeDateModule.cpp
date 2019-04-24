@@ -52,7 +52,7 @@ TimeDateModule::TimeDateModule( QWidget* parent, const QVariantList& args ) :
                                             PROJECT_VERSION,
                                             TimeDateCommon::getDescription(),
                                             KAboutLicense::LicenseKey::GPL_V3,
-                                            "(c) 2014 - 2017 Manjaro Settings Manager developers" );
+                                            "(c) 2014 - 2019 Manjaro Settings Manager developers" );
     aboutData->addAuthor( "Ramon Buldó",
                           QStringLiteral( "ramon@manjaro.org" ) );
     aboutData->setCustomAuthorText( QString(), MsmCommon::getBugReportLink() );
@@ -123,8 +123,8 @@ TimeDateModule::load()
     m_isTimeEdited = false;
     m_isDateEdited = false;
     m_timeZone = m_timeDateService->timeZone();
-    TimeDateCommon::updateUi( ui, m_timeDateService, m_isTimeEdited, m_isDateEdited, m_timeZone );
     m_timeFieldsTimer->start( 1000 );
+    TimeDateCommon::updateUi( ui, m_timeDateService, m_isTimeEdited, m_isDateEdited, m_timeZone );
 }
 
 
@@ -132,7 +132,8 @@ void
 TimeDateModule::save()
 {
     TimeDateCommon::save( ui, m_timeDateService, m_isTimeEdited, m_isDateEdited, m_timeZone );
-    load();
+    m_isTimeEdited = false;
+    m_isDateEdited = false;
 }
 
 

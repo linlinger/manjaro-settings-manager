@@ -2,6 +2,7 @@
  *  This file is part of Manjaro Settings Manager.
  *
  *  Ramon Buldó <ramon@manjaro.org>
+ *  Kacper Piwiński
  *
  *  Manjaro Settings Manager is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
@@ -21,15 +22,12 @@
 #define TIMEDATEPAGE_H
 
 #include "TimeDateService.h"
-#include "TimeZoneWidget.h"
 #include "PageWidget.h"
-
 
 namespace Ui
 {
-class PageTimeDate;
+    class PageTimeDate;
 }
-
 
 class TimeDatePage : public PageWidget
 {

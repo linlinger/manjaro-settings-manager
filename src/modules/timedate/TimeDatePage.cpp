@@ -19,10 +19,9 @@
  */
 
 #include "TimeDateCommon.h"
+#include "TimeZoneDialog.h"
 #include "TimeDatePage.h"
 #include "ui_PageTimeDate.h"
-
-#include "TimeZoneDialog.h"
 
 #include <QtCore/QDebug>
 #include <QtCore/QStringList>
@@ -104,9 +103,9 @@ TimeDatePage::load()
     m_isTimeEdited = false;
     m_isDateEdited = false;
     m_timeZone = m_timeDateService->timeZone();
-    TimeDateCommon::updateUi( ui, m_timeDateService, m_isTimeEdited, m_isDateEdited, m_timeZone );
     m_timeFieldsTimer->start( 1000 );
     QApplication::restoreOverrideCursor();
+    TimeDateCommon::updateUi( ui, m_timeDateService, m_isTimeEdited, m_isDateEdited, m_timeZone );
 }
 
 
@@ -115,5 +114,6 @@ TimeDatePage::save()
 {
     TimeDateCommon::save( ui, m_timeDateService, m_isTimeEdited, m_isDateEdited, m_timeZone );
     this -> setApplyEnabled( this, false );
-    load();
+    m_isTimeEdited = false;
+    m_isDateEdited = false;
 }
