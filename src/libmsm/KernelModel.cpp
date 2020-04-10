@@ -367,7 +367,7 @@ KernelModel::getLtsKernels() const
 QStringList
 KernelModel::getRecommendedKernels() const
 {
-    return QStringList() << "linux414" << "linux419";
+    return QStringList() << "linux414" << "linux419" << "linux54";
 }
 
 
