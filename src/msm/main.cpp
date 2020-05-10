@@ -46,6 +46,10 @@ int main( int argc, char* argv[] )
     parser.addHelpOption();
     //parser.addVersionOption();
 
+    #if QT_VERSION >= 0x050600
+      QGuiApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
+    #endif
+
     QCommandLineOption debugOption( QStringList() << "d" << "debug",
                                     "Verbose output for debugging purposes." );
     parser.addOption( debugOption );
