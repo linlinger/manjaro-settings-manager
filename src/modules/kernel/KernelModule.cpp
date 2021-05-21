@@ -45,7 +45,7 @@ PageKernel::PageKernel( QWidget* parent, const QVariantList& args ) :
                                             PROJECT_VERSION,
                                             KernelCommon::getDescription(),
                                             KAboutLicense::LicenseKey::GPL_V3,
-                                            "(c) 2014 - 2020 Manjaro Settings Manager developers" );
+                                            "(c) 2014 - 2021 Manjaro Settings Manager developers" );
     aboutData->addAuthor( "Ramon Buldó",
                           QStringLiteral( "ramon@manjaro.org" ) );
     aboutData->setCustomAuthorText( QString(), MsmCommon::getBugReportLink() );
