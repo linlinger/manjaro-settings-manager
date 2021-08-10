@@ -25,5 +25,5 @@ target_link_libraries(msm_notifier
     Qt5::Widgets)
 
 install(TARGETS msm_notifier DESTINATION ${CMAKE_INSTALL_BINDIR})
-install(PROGRAMS msm_notifier.desktop DESTINATION ${KDE_INSTALL_AUTOSTARTDIR})
+install(FILES msm_notifier.desktop DESTINATION ${KDE_INSTALL_AUTOSTARTDIR})
 install(FILES msm_notifier_settings.desktop DESTINATION ${CMAKE_INSTALL_DATADIR}/applications)

@@ -26,5 +26,5 @@ target_link_libraries(msm_kde_notifier
     KF5::Notifications)
 
 install(TARGETS msm_kde_notifier DESTINATION ${CMAKE_INSTALL_BINDIR})
-install(PROGRAMS msm_kde_notifier.desktop DESTINATION ${KDE_INSTALL_AUTOSTARTDIR})
+install(FILES msm_kde_notifier.desktop DESTINATION ${KDE_INSTALL_AUTOSTARTDIR})
 install(FILES msm_kde_notifier_settings.desktop DESTINATION ${CMAKE_INSTALL_DATADIR}/applications)
