@@ -40,5 +40,5 @@ target_link_libraries(msm_bin
 install(TARGETS msm_bin
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
 install(FILES
-    manjaro-settings-manager.desktop
+    spannningtree-settings-manager.desktop
     DESTINATION ${CMAKE_INSTALL_DATADIR}/applications)
