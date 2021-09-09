@@ -1,4 +1,5 @@
-# Maintainer : Ramon Buldo <ramon@manjaro.org>
+# Maintainer : linlinger <linyx@stp.net.cn>
+# Contributor : Ramon Buldo <ramon@manjaro.org>
 
 pkgbase=manjaro-settings-manager
 pkgname=('manjaro-settings-manager' 'manjaro-settings-manager-kcm' 
@@ -6,9 +7,9 @@ pkgname=('manjaro-settings-manager' 'manjaro-settings-manager-kcm'
 pkgver=0.5.6
 #_commit=e085b661c3c97e8aa39a5b49896a88a95d84caf9
 pkgrel=1
-pkgdesc="Manjaro Linux System Settings Tool"
+pkgdesc="Linux System Settings Tool developed by Manjaro Linux"
 arch=('i686' 'x86_64')
-url="https://gitlab.manjaro.org/applications/manjaro-settings-manager"
+url="https://github.com/linlinger/manjaro-settings-manager"
 license=("GPL")
 depends=('icu<64.2' 'qt5-base>=5.12.3' 'hwinfo' 'kitemmodels' 'kauth' 
          'kcoreaddons' 'ckbcomp' 'xdg-utils')
@@ -18,8 +19,9 @@ makedepends=('extra-cmake-modules' 'kdoctools' 'qt5-tools' 'knotifications'
              'kconfigwidgets' 'kcmutils')
 conflicts=('kcm-msm')
 # source=("msm-$pkgver-$pkgrel.tar.gz::$url/-/archive/$_commit/$pkgname-$_commit.tar.gz")
-source=("msm-$pkgver-$pkgrel.tar.gz::$url/-/archive/$pkgver/$pkgbase-$pkgver.tar.gz")
-sha256sums=('2cebe2485563c9bb9445df0ae7644fdcfa6d0ac3167cf0205c5a785f8520f376')
+# source=("msm-$pkgver-$pkgrel.tar.gz::$url/-/archive/$pkgver/$pkgbase-$pkgver.tar.gz")
+source=("git+https://github.com/linlinger/${pkgname}.git")
+sha256sums=('SKIP')
 
 prepare() {
 #  mv ${pkgbase}-${_commit} ${pkgbase}-${pkgver}
