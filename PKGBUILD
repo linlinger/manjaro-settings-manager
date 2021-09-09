@@ -25,12 +25,12 @@ sha256sums=('SKIP')
 
 prepare() {
 #  mv ${pkgbase}-${_commit} ${pkgbase}-${pkgver}
-  cd "$srcdir/${pkgbase}-${pkgver}"
+  cd "$srcdir/${pkgbase}"
   # patches here
 }
 
 build() {
-  cd "$srcdir/${pkgbase}-${pkgver}"
+  cd "$srcdir/${pkgbase}"
   mkdir -p build
   cd build
   cmake ../ \
@@ -43,7 +43,7 @@ build() {
 }
 
 package_manjaro-settings-manager() {
-  cd "$srcdir/${pkgbase}-${pkgver}/build"
+  cd "$srcdir/${pkgbase}/build"
   make DESTDIR=${pkgdir} install 
   rm -rf $pkgdir/usr/bin/msm_notifier
   rm -rf $pkgdir/usr/bin/msm_kde_notifier
@@ -58,7 +58,7 @@ package_manjaro-settings-manager-kcm() {
   pkgdesc="Manjaro Linux System Settings Tool (KCM for Plasma 5)"
   depends=('manjaro-settings-manager' 'kcmutils' 'kconfigwidgets')
   replaces=('kcm-msm')
-  cd "$srcdir/${pkgbase}-${pkgver}/build"
+  cd "$srcdir/${pkgbase}/build"
   make DESTDIR=${pkgdir} install
   rm -rf $pkgdir/etc  
   rm -rf $pkgdir/usr/bin
@@ -71,7 +71,7 @@ package_manjaro-settings-manager-notifier() {
   depends=('manjaro-settings-manager')
   provides=('manjaro-settings-manager-kde-notifier')
   conflicts=('manjaro-settings-manager-kde-notifier')
-  cd "$srcdir/${pkgbase}-${pkgver}/build"
+  cd "$srcdir/${pkgbase}/build"
   make DESTDIR=${pkgdir} install
   rm -rf $pkgdir/etc/dbus-1
   rm -rf $pkgdir/etc/xdg/autostart/msm_kde_notifier.desktop
@@ -88,7 +88,7 @@ package_manjaro-settings-manager-knotifier() {
   depends=('manjaro-settings-manager' 'knotifications')
   conflicts=('manjaro-settings-manager-notifier')
   replaces=('manjaro-settings-manager-kde-notifier')
-  cd "$srcdir/${pkgbase}-${pkgver}/build"
+  cd "$srcdir/${pkgbase}/build"
   make DESTDIR=${pkgdir} install
   rm -rf $pkgdir/etc/dbus-1
   rm -rf $pkgdir/etc/xdg/autostart/msm_notifier.desktop
