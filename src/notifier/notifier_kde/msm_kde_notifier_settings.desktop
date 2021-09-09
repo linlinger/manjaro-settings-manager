@@ -5,6 +5,8 @@ Name[fr]=Paramètres du Notifieur KDE SpanningTree
 Name[hu]=A SpanningTree Notifier KDE beállítása
 Name[pl]=Ustawienia powiadomień SpanningTree dla KDE
 Name[sk]=Nastavenia oznámení KDE systému SpanningTree
+Name[zh_CN]=系统提示设置（KDE）
+
 
 Comment=Graphical Settings for SpanningTree Notifier KDE
 Comment[da]=Grafiske indstillinger til SpanningTree-notifikator KDE
@@ -13,6 +15,7 @@ Comment[fr]=Gestionnaire graphique de paramètres pour Notifieur SpanningTree
 Comment[hu]=Grafikus beállításkezelő a SpanningTree KDE Értesítőhöz
 Comment[pl]=Graficzne ustawienia powiadomień SpanningTree dla środowiska KDE
 Comment[sk]=Grafické nastavenia oznámení prostredia KDE pre systém SpanningTree
+Comment[zh_CN]=系统提示设置(KDE)
 
 Exec=msm_kde_notifier --settings
 Icon=preferences-desktop
