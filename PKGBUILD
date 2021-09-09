@@ -11,7 +11,7 @@ pkgdesc="Linux System Settings Tool developed by Manjaro Linux"
 arch=('i686' 'x86_64')
 url="https://github.com/linlinger/manjaro-settings-manager"
 license=("GPL")
-depends=('icu<64.2' 'qt5-base>=5.12.3' 'hwinfo' 'kitemmodels' 'kauth' 
+depends=('icu' 'qt5-base' 'hwinfo' 'kitemmodels' 'kauth' 
          'kcoreaddons' 'ckbcomp' 'xdg-utils')
 optdepends=('manjaro-settings-manager-notifier: qt-based'
             'manjaro-settings-manager-knotifier: knotifications-based')
