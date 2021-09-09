@@ -17,7 +17,7 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>Manjaro Settings Manager</string>
+   <string>SpanningTree 设置管理器</string>
   </property>
   <property name="windowIcon">
    <iconset resource="msm.qrc">
