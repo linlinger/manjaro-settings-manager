@@ -4,8 +4,10 @@ Name[x-test]=xxspanningtree-settings-managerxx
 Icon=kauth-example
 URL=https://github.com/linlinger/manjaro-settings-manager
 
-[org.manjaro.msm.locale.save]
+[org.spanningtree.msm.locale.save]
 Name=Save Locale Settings
+Name[zh_CN]=保存语言设定需要管理员权限
 Description=Save Locale Settings
+Description[zh_CN]=保存语言设定
 Policy=auth_admin
 Persistence=session

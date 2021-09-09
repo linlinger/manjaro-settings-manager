@@ -161,8 +161,8 @@ MhwdCommon::installConfiguration( QString configuration )
 
     QVariantMap args;
     args["arguments"] = QStringList() << "-i" << "pci" << configuration;
-    KAuth::Action installAction( QLatin1String( "org.manjaro.msm.mhwd.install" ) );
-    installAction.setHelperId( QLatin1String( "org.manjaro.msm.mhwd" ) );
+    KAuth::Action installAction( QLatin1String( "org.spanningtree.msm.mhwd.install" ) );
+    installAction.setHelperId( QLatin1String( "org.spanningtree.msm.mhwd" ) );
     installAction.setArguments( args );
     installAction.setTimeout( std::numeric_limits<int>::max() );
 
@@ -184,8 +184,8 @@ MhwdCommon::installFreeConfiguration( )
 
     QVariantMap args;
     args["arguments"] = QStringList() << "-a" << "pci" << "free" << "0300";
-    KAuth::Action installAction( QLatin1String( "org.manjaro.msm.mhwd.install" ) );
-    installAction.setHelperId( QLatin1String( "org.manjaro.msm.mhwd" ) );
+    KAuth::Action installAction( QLatin1String( "org.spanningtree.msm.mhwd.install" ) );
+    installAction.setHelperId( QLatin1String( "org.spanningtree.msm.mhwd" ) );
     installAction.setArguments( args );
     installAction.setTimeout( std::numeric_limits<int>::max() );
 
@@ -207,8 +207,8 @@ MhwdCommon::installNonFreeConfiguration( )
 
     QVariantMap args;
     args["arguments"] = QStringList() << "-a" << "pci" << "nonfree" << "0300";
-    KAuth::Action installAction( QLatin1String( "org.manjaro.msm.mhwd.install" ) );
-    installAction.setHelperId( QLatin1String( "org.manjaro.msm.mhwd" ) );
+    KAuth::Action installAction( QLatin1String( "org.spanningtree.msm.mhwd.install" ) );
+    installAction.setHelperId( QLatin1String( "org.spanningtree.msm.mhwd" ) );
     installAction.setArguments( args );
     installAction.setTimeout( std::numeric_limits<int>::max() );
 
@@ -230,8 +230,8 @@ MhwdCommon::reinstallConfiguration( QString configuration )
 
     QVariantMap args;
     args["arguments"] = QStringList() << "-f" << "-i" << "pci" << configuration;
-    KAuth::Action installAction( QLatin1String( "org.manjaro.msm.mhwd.install" ) );
-    installAction.setHelperId( QLatin1String( "org.manjaro.msm.mhwd" ) );
+    KAuth::Action installAction( QLatin1String( "org.spanningtree.msm.mhwd.install" ) );
+    installAction.setHelperId( QLatin1String( "org.spanningtree.msm.mhwd" ) );
     installAction.setArguments( args );
     installAction.setTimeout( std::numeric_limits<int>::max() );
 
@@ -253,8 +253,8 @@ MhwdCommon::removeConfiguration( QString configuration )
 
     QVariantMap args;
     args["arguments"] = QStringList() << "-r" << "pci" << configuration;
-    KAuth::Action installAction( QLatin1String( "org.manjaro.msm.mhwd.remove" ) );
-    installAction.setHelperId( QLatin1String( "org.manjaro.msm.mhwd" ) );
+    KAuth::Action installAction( QLatin1String( "org.spanningtree.msm.mhwd.remove" ) );
+    installAction.setHelperId( QLatin1String( "org.spanningtree.msm.mhwd" ) );
     installAction.setArguments( args );
     installAction.setTimeout( std::numeric_limits<int>::max() );
 

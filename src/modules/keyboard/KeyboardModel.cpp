@@ -413,8 +413,8 @@ KeyboardModel::saveKeyboardLayout()
         args["variant"] = m_newVariant;
     }
 
-    KAuth::Action saveAction( QLatin1String( "org.manjaro.msm.keyboard.save" ) );
-    saveAction.setHelperId( QLatin1String( "org.manjaro.msm.keyboard" ) );
+    KAuth::Action saveAction( QLatin1String( "org.spanningtree.msm.keyboard.save" ) );
+    saveAction.setHelperId( QLatin1String( "org.spanningtree.msm.keyboard" ) );
     saveAction.setArguments( args );
     KAuth::ExecuteJob* job = saveAction.execute();
     if ( job->exec() )

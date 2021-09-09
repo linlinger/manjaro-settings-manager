@@ -401,8 +401,8 @@ LocaleModule::save()
         args["localeList"] = localeList;
 
         // TODO: Progress UI
-        KAuth::Action installAction( QLatin1String( "org.manjaro.msm.locale.save" ) );
-        installAction.setHelperId( QLatin1String( "org.manjaro.msm.locale" ) );
+        KAuth::Action installAction( QLatin1String( "org.spanningtree.msm.locale.save" ) );
+        installAction.setHelperId( QLatin1String( "org.spanningtree.msm.locale" ) );
         installAction.setArguments( args );
         installAction.setTimeout( 60000 );
         KAuth::ExecuteJob* job = installAction.execute();

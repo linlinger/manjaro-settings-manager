@@ -92,5 +92,5 @@ KeyboardAuthHelper::save( const QVariantMap& args )
     return ActionReply::SuccessReply();
 }
 
-KAUTH_HELPER_MAIN( "org.manjaro.msm.keyboard", KeyboardAuthHelper )
+KAUTH_HELPER_MAIN( "org.spanningtree.msm.keyboard", KeyboardAuthHelper )
 #include "moc_KeyboardAuthHelper.cpp"

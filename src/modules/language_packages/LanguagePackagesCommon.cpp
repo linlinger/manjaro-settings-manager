@@ -205,8 +205,8 @@ LanguagePackagesCommon::installPackages( Ui::PageLanguagePackages* ui  )
         arguments << "--noconfirm" << "--noprogressbar" << "-S" << packages;
         QVariantMap args;
         args["arguments"] = arguments;
-        KAuth::Action installAction( QLatin1String( "org.manjaro.msm.languagepackages.install" ) );
-        installAction.setHelperId( QLatin1String( "org.manjaro.msm.languagepackages" ) );
+        KAuth::Action installAction( QLatin1String( "org.spanningtree.msm.languagepackages.install" ) );
+        installAction.setHelperId( QLatin1String( "org.spanningtree.msm.languagepackages" ) );
         installAction.setArguments( args );
         installAction.setTimeout( std::numeric_limits<int>::max() );
 

@@ -21,7 +21,7 @@ Comment[pl]=Graficzny menedżer ustawień systemu SpanningTree
 Comment[ro]=Gestionar grafic de setări de sistem pt. SpanningTree
 Comment[sk]=Grafický správca nastavení pre systém SpanningTree
 
-Exec=SpanningTree-settings-manager
+Exec=spanningtree-settings-manager
 Icon=preferences-desktop
 Terminal=false
 Type=Application

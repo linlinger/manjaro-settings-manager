@@ -100,8 +100,8 @@ void AddUserDialog::buttonCreate_clicked()
     dataChanged = true;
 
     // Add user
-    KAuth::Action installActionAdd( QLatin1String( "org.manjaro.msm.users.add" ) );
-    installActionAdd.setHelperId( QLatin1String( "org.manjaro.msm.users" ) );
+    KAuth::Action installActionAdd( QLatin1String( "org.spanningtree.msm.users.add" ) );
+    installActionAdd.setHelperId( QLatin1String( "org.spanningtree.msm.users" ) );
     QVariantMap args;
     QString defaultUserGroups {"video,audio,power,optical,network,lp,scanner,sys"};
     args["arguments"] = QStringList() << "-m" << "-p" << "" << "-U" << "-G" << defaultUserGroups << username;
@@ -122,8 +122,8 @@ void AddUserDialog::buttonCreate_clicked()
     }
 
     // Set password
-    KAuth::Action installActionUsersChangePassword( QLatin1String( "org.manjaro.msm.users.changepassword" ) );
-    installActionUsersChangePassword.setHelperId( QLatin1String( "org.manjaro.msm.users" ) );
+    KAuth::Action installActionUsersChangePassword( QLatin1String( "org.spanningtree.msm.users.changepassword" ) );
+    installActionUsersChangePassword.setHelperId( QLatin1String( "org.spanningtree.msm.users" ) );
     args.clear();
     args["arguments"] = QStringList() << username;
     args["writeArgs"] = QStringList() << password << password;

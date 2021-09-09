@@ -64,5 +64,5 @@ LanguagePackagesAuthHelper::remove( const QVariantMap& args )
     return ActionReply::SuccessReply();
 }
 
-KAUTH_HELPER_MAIN( "org.manjaro.msm.languagepackages", LanguagePackagesAuthHelper )
+KAUTH_HELPER_MAIN( "org.spanningtree.msm.languagepackages", LanguagePackagesAuthHelper )
 #include "moc_LanguagePackagesAuthHelper.cpp"

@@ -43,7 +43,7 @@ KernelCommon::getTitle()
 QString
 KernelCommon::getDescription()
 {
-    return QString( tr ( "Add and remove manjaro kernels" ) );
+    return QString( tr ( "Add and remove SpanningTree kernels" ) );
 }
 
 
@@ -88,8 +88,8 @@ KernelCommon::installKernel( const QModelIndex& index )
     arguments << "--noconfirm" << "--noprogressbar" << "-S" << packageList;
     QVariantMap args;
     args["arguments"] = arguments;
-    KAuth::Action installAction( QLatin1String( "org.manjaro.msm.kernel.install" ) );
-    installAction.setHelperId( QLatin1String( "org.manjaro.msm.kernel" ) );
+    KAuth::Action installAction( QLatin1String( "org.spanningtree.msm.kernel.install" ) );
+    installAction.setHelperId( QLatin1String( "org.spanningtree.msm.kernel" ) );
     installAction.setArguments( args );
     installAction.setTimeout( std::numeric_limits<int>::max() );
 
@@ -124,8 +124,8 @@ KernelCommon::removeKernel( const QModelIndex& index )
     arguments << "--noconfirm" << "--noprogressbar" << "-R" << packageList;
     QVariantMap args;
     args["arguments"] = arguments;
-    KAuth::Action installAction( QLatin1String( "org.manjaro.msm.kernel.remove" ) );
-    installAction.setHelperId( QLatin1String( "org.manjaro.msm.kernel" ) );
+    KAuth::Action installAction( QLatin1String( "org.spanningtree.msm.kernel.remove" ) );
+    installAction.setHelperId( QLatin1String( "org.spanningtree.msm.kernel" ) );
     installAction.setArguments( args );
     installAction.setTimeout( std::numeric_limits<int>::max() );
 

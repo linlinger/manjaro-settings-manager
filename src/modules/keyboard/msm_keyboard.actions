@@ -1,11 +1,13 @@
 [Domain]
-Name=manjaro-settings-manager
-Name[x-test]=xxmanjaro-settings-managerxx
+Name=spanningtree-settings-manager
+Name[x-test]=xxspanningtree-settings-managerxx
 Icon=kauth-example
-URL=https://github.com/manjaro/manjaro-settings-manager
+URL=https://github.com/linlinger/manjaro-settings-manager
 
 [org.manjaro.msm.keyboard.save]
 Name=Save Keyboard Settings
+Name[zh_CN]=保存键盘设置需要管理员权限
 Description=Save Keyboard Settings
+Description[zh_CN]=保存键盘设置
 Policy=auth_admin
 Persistence=session

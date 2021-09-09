@@ -1,17 +1,21 @@
 [Domain]
-Name=manjaro-settings-manager
-Name[x-test]=xxmanjaro-settings-managerxx
+Name=spanningtree-settings-manager
+Name[x-test]=xxspanningtree-settings-managerxx
 Icon=kauth-example
-URL=https://github.com/manjaro/manjaro-settings-manager
+URL=https://github.com/linlinger/manjaro-settings-manager
 
-[org.manjaro.msm.mhwd.install]
+[org.spanningtree.msm.mhwd.install]
 Name=Install MHWD Configuration
+Name[zh_CN]=安装MHWD配置需要管理员权限
 Description=Install MHWD Configuration
+Description[zh_CN]=安装MHWD配置
 Policy=auth_admin
 Persistence=session
 
-[org.manjaro.msm.mhwd.remove]
+[org.spanningtree.msm.mhwd.remove]
 Name=Remove MHWD Configuration
+Name[zh_CN]=移除MHWD配置需要管理员权限
 Description=Remove MHWD Configuration
+Description[zh_CN]=移除MHWD配置
 Policy=auth_admin
 Persistence=session

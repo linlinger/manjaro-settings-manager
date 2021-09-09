@@ -1,36 +1,46 @@
 [Domain]
-Name=manjaro-settings-manager
-Name[x-test]=xxmanjaro-settings-managerxx
+Name=spanningtree-settings-manager
+Name[x-test]=xxspanningtree-settings-managerxx
 Icon=kauth-example
-URL=https://github.com/manjaro/manjaro-settings-manager
+URL=https://github.com/spanningtree/spanningtree-settings-manager
 
 [org.spanningtree.msm.users.add]
 Name=Add User
+Name[zh_CN]=添加用户需要管理员权限
 Description=Add User
+Description[zh_CN]=添加用户
 Policy=auth_admin
 Persistence=session
 
 [org.spanningtree.msm.users.remove]
 Name=Remove User
+Name[zh_CN]=删除用户需要管理员权限
 Description=Remove User
+Description[zh_CN]=删除用户
 Policy=auth_admin
 Persistence=session
 
 [org.spanningtree.msm.users.changepassword]
 Name=Change Password
+Name[zh_CN]=修改用户密码需要管理员权限
 Description=Change Password
+Description[zh_CN]=修改用户密码
 Policy=auth_admin
 Persistence=session
 
 [org.spanningtree.msm.users.changeaccounttype]
 Name=Change Account Type
+Name[zh_CN]=修改用户账户类型需要管理员权限
 Description=Change Account Type
+Description[zh_CN]=修改用户类型
 Policy=auth_admin
 Persistence=session
 
 [org.spanningtree.msm.users.changeimage]
 Name=Change Image
+Name[zh_CN]=更改用户头像需要管理员权限
 Description=Change Image
+Description[zh_CN]=修改用户头像
 Policy=auth_admin
 Persistence=session
 

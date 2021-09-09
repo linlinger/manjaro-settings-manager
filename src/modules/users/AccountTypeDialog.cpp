@@ -172,8 +172,8 @@ AccountTypeDialog::buttonApply_clicked()
     m_userGroupDataChanged = true;
 
     // Set groups
-    KAuth::Action installAction( QLatin1String( "org.manjaro.msm.users.changeaccounttype" ) );
-    installAction.setHelperId( QLatin1String( "org.manjaro.msm.users" ) );
+    KAuth::Action installAction( QLatin1String( "org.spanningtree.msm.users.changeaccounttype" ) );
+    installAction.setHelperId( QLatin1String( "org.spanningtree.msm.users" ) );
     QVariantMap args;
     args["arguments"] = QStringList() << "-G" << groups.join( "," ) << m_username;
     installAction.setArguments( args );

@@ -7,7 +7,7 @@ pkgname=('manjaro-settings-manager' 'manjaro-settings-manager-kcm'
 pkgver=0.5.6
 #_commit=e085b661c3c97e8aa39a5b49896a88a95d84caf9
 pkgrel=1
-pkgdesc="Linux System Settings Tool developed by Manjaro Linux"
+pkgdesc="Linux System Settings Tool developed by  Manjaro Linux"
 arch=('i686' 'x86_64')
 url="https://github.com/linlinger/manjaro-settings-manager"
 license=("GPL")
@@ -77,7 +77,7 @@ package_manjaro-settings-manager-notifier() {
   rm -rf $pkgdir/etc/xdg/autostart/msm_kde_notifier.desktop
   rm -rf $pkgdir/usr/lib/
   rm -rf $pkgdir/usr/share/{kservices5,dbus-1,icons,polkit-1}
-  rm -rf $pkgdir/usr/share/applications/manjaro*
+  rm -rf $pkgdir/usr/share/applications/spanningtree*
   rm -rf $pkgdir/usr/share/applications/msm_kde_notifier_settings.desktop
   rm -rf $pkgdir/usr/bin/manjaro*
   rm -rf $pkgdir/usr/bin/msm_kde_notifier
@@ -94,7 +94,7 @@ package_manjaro-settings-manager-knotifier() {
   rm -rf $pkgdir/etc/xdg/autostart/msm_notifier.desktop
   rm -rf $pkgdir/usr/lib/
   rm -rf $pkgdir/usr/share/{kservices5,dbus-1,icons,polkit-1}
-  rm -rf $pkgdir/usr/share/applications/manjaro*
+  rm -rf $pkgdir/usr/share/applications/spanningtree*
   rm -rf $pkgdir/usr/share/applications/msm_notifier_settings.desktop
   rm -rf $pkgdir/usr/bin/manjaro*
   rm -rf $pkgdir/usr/bin/msm_notifier

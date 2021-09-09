@@ -647,7 +647,7 @@ It is recommended to enable those groups. Do you really want to continue?</sourc
     <message>
         <location filename="../../msm/MsmWindow.ui" line="14"/>
         <source>Manjaro Settings Manager</source>
-        <translation>Manjaro 设置管理器</translation>
+        <translation>SpanningTree Linux  设置管理器</translation>
     </message>
     <message>
         <location filename="../../msm/MsmWindow.ui" line="185"/>
