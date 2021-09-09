@@ -196,8 +196,8 @@ It is recommended to enable those groups. Do you really want to continue?</sourc
     </message>
     <message>
         <location filename="../../modules/kernel/KernelCommon.cpp" line="46"/>
-        <source>Add and remove manjaro kernels</source>
-        <translation>安装或已出 Manjaro 内</translation>
+        <source>Add and remove kernels</source>
+        <translation>安装或移除内核</translation>
     </message>
     <message>
         <location filename="../../modules/kernel/KernelCommon.cpp" line="77"/>
@@ -646,7 +646,7 @@ It is recommended to enable those groups. Do you really want to continue?</sourc
     <name>MsmWindow</name>
     <message>
         <location filename="../../msm/MsmWindow.ui" line="14"/>
-        <source>Manjaro Settings Manager</source>
+        <source>SpanningTree Settings Manager</source>
         <translation>SpanningTree Linux  设置管理器</translation>
     </message>
     <message>
@@ -676,9 +676,9 @@ It is recommended to enable those groups. Do you really want to continue?</sourc
         <translation>硬件</translation>
     </message>
     <message>
-        <location filename="../../msm/MsmWindow.cpp" line="153"/>
-        <source>Manjaro Settings</source>
-        <translation>Manjaro 设定</translation>
+        <location filename="../../msm/MsmWindow.cpp" line="154"/>
+        <source>SpanningTree Settings</source>
+        <translation>SpanningTree 设定</translation>
     </message>
 </context>
 <context>
@@ -716,8 +716,8 @@ It is recommended to enable those groups. Do you really want to continue?</sourc
         <location filename="../../notifier/notifier_kde/Notifier.cpp" line="220"/>
         <location filename="../../notifier/notifier_kde/Notifier.cpp" line="228"/>
         <location filename="../../notifier/notifier_kde/Notifier.cpp" line="281"/>
-        <source>Manjaro Settings Manager</source>
-        <translation>Manjaro 设置管理器</translation>
+        <source>SpanningTree Settings Manager</source>
+        <translation>SpanningTree 设置管理器</translation>
     </message>
     <message numerus="yes">
         <location filename="../../notifier/notifier/Notifier.cpp" line="192"/>
