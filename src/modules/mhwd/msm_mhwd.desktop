@@ -1,4 +1,5 @@
 #!/usr/bin/env xdg-open
+
 [Desktop Entry]
 Type=Service
 Icon=audio-card
@@ -6,12 +7,12 @@ Exec=kcmshell5 msm_mhwd
 
 X-KDE-Library=msm_mhwd
 X-KDE-ServiceTypes=KCModule
-X-KDE-System-Settings-Parent-Category=manjaro
+X-KDE-System-Settings-Parent-Category=
 X-KDE-ParentApp=kcontrol
 X-KDE-PluginKeyword=msm_mhwd
 X-KDE-Keywords=hardware
 X-KDE-Keywords[x-test]=xxhardwarexx
-Categories=Qt;KDE;X-KDE-settings-system;manjaro
+Categories=Qt;KDE;X-KDE-settings-system;
 
 Name=Hardware Configuration
 Name[ca]=Configuració del maquinari
@@ -48,31 +49,31 @@ Name[zh_TW]=硬體設定
 Name[ast]=Configuración de Hardware
 
 
-Comment=Manjaro Hardware Detection graphical user interface
-Comment[ca]=Interfície d'usuari gràfica per a la Detecció de maquinari del Manjaro
-Comment[da]=Manjaro hardwareregistrering grafisk brugerflade
-Comment[de]=Grafische Benutzeroberfläche der Manjaro-Hardwareerkennung
-Comment[es]=Interfaz gráfica de usuario para Manjaro Hardware Detection
-Comment[es_419]=Interfaz gráfica de Detección de Hardware de Manjaro
+Comment= Hardware Detection graphical user interface
+Comment[ca]=Interfície d'usuari gràfica per a la Detecció de maquinari del 
+Comment[da]= hardwareregistrering grafisk brugerflade
+Comment[de]=Grafische Benutzeroberfläche der -Hardwareerkennung
+Comment[es]=Interfaz gráfica de usuario para  Hardware Detection
+Comment[es_419]=Interfaz gráfica de Detección de Hardware de 
 Comment[fa_IR]=تشخیص سخت افزاری رابط گرافیکی کاربر مانجارو
-Comment[fi]=Manjaro laitteiston tunnistuksen graaffinen käyttöliittymä
-Comment[fr]=Interface utilisateur de détection matérielle de Manjaro
-Comment[hr]=Grafičko korisničko sučelje za Manjaro Hardware Detection
-Comment[hu]=Manjaro Hardware Érzékelés grafikus felhasználói felület
-Comment[is]=Manjaro vélbúnaðar greining með grafísku notendaviðmóti
-Comment[it]=Interfaccia grafica di Manjaro Hardware Detection
-Comment[ja]=Manjaro Hardware Detection graphical user interface
-Comment[lt]=Manjaro aparatinės įrangos aptikimo grafinė naudotojo sąsaja
-Comment[nb]=Grensesnitt for Manjaro Hardware Detection
-Comment[pl]=Graficzny interfejs użytkownika wykrywania sprzętu Manjaro
-Comment[pt_BR]=Interface Gráfica do Usuário Manjaro Hardware Detection
-Comment[pt_PT]=Manjaro Hardware Detection interface gráfica do utilizador
-Comment[ro]=Interfața grafică de detectare hardware a sistemului Manjaro
-Comment[ru]=Графический интерфейс Manjaro Hardware Detection
-Comment[sk_SK]=Grafické rozhranie pre rozpoznanie hardvéru systému Manjaro
-Comment[sl]=Manjaro strojna zaznava grafičnega vmesnika
-Comment[sv]=Manjaros hårdvarudetekteringsverktyg
-Comment[tr]=MHWD - Manjaro Donanım Yapılandırma grafik arayüzü
-Comment[uk]=Manjaro виявлено обладнання графічний користувальницький інтерфейс
-Comment[zh_CN]=使用 Manjaro 硬件侦测图形用户界面
-Comment[zh_TW]=Manjaro 硬體偵測圖形使用者介面
+Comment[fi]= laitteiston tunnistuksen graaffinen käyttöliittymä
+Comment[fr]=Interface utilisateur de détection matérielle de 
+Comment[hr]=Grafičko korisničko sučelje za  Hardware Detection
+Comment[hu]= Hardware Érzékelés grafikus felhasználói felület
+Comment[is]= vélbúnaðar greining með grafísku notendaviðmóti
+Comment[it]=Interfaccia grafica di  Hardware Detection
+Comment[ja]= Hardware Detection graphical user interface
+Comment[lt]= aparatinės įrangos aptikimo grafinė naudotojo sąsaja
+Comment[nb]=Grensesnitt for  Hardware Detection
+Comment[pl]=Graficzny interfejs użytkownika wykrywania sprzętu 
+Comment[pt_BR]=Interface Gráfica do Usuário  Hardware Detection
+Comment[pt_PT]= Hardware Detection interface gráfica do utilizador
+Comment[ro]=Interfața grafică de detectare hardware a sistemului 
+Comment[ru]=Графический интерфейс  Hardware Detection
+Comment[sk_SK]=Grafické rozhranie pre rozpoznanie hardvéru systému 
+Comment[sl]= strojna zaznava grafičnega vmesnika
+Comment[sv]=s hårdvarudetekteringsverktyg
+Comment[tr]=MHWD -  Donanım Yapılandırma grafik arayüzü
+Comment[uk]= виявлено обладнання графічний користувальницький інтерфейс
+Comment[zh_CN]=使用  硬件侦测图形用户界面
+Comment[zh_TW]= 硬體偵測圖形使用者介面

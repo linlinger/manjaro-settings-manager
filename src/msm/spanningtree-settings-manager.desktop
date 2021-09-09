@@ -1,0 +1,28 @@
+[Desktop Entry]
+Name=SpanningTree Settings Manager
+Name[ca]=Gestor de configuració de SpanningTree
+Name[da]=SpanningTree indstillingshåndtering
+Name[de]=SpanningTree Einstellungen
+Name[en_GB]=SpanningTree Settings Manager
+Name[es]=Gestor de configuración de SpanningTree
+Name[fr]=SpanningTree Gestionnaire de paramètres
+Name[pl]=Menedżer ustawień SpanningTree
+Name[ro]=Gestionar de Setări SpanningTree
+Name[sk]=Správca nastavení systému SpanningTree
+
+Comment=Graphical Settings Manager for SpanningTree
+Comment[ca]=Gestor de configuració gràfic de SpanningTree
+Comment[da]=Grafisk indstillingshåndtering til SpanningTree
+Comment[de]=Grafische Einstellungsverwaltung für SpanningTree
+Comment[en_GB]=Graphical Settings Manager for SpanningTree
+Comment[es]=Gestor de configuración gráfico de SpanningTree
+Comment[fr]=Gestionnaire graphique de paramètres pour SpanningTree
+Comment[pl]=Graficzny menedżer ustawień systemu SpanningTree
+Comment[ro]=Gestionar grafic de setări de sistem pt. SpanningTree
+Comment[sk]=Grafický správca nastavení pre systém SpanningTree
+
+Exec=SpanningTree-settings-manager
+Icon=preferences-desktop
+Terminal=false
+Type=Application
+Categories=Settings;DesktopSettings;X-LXDE-Settings;X-KDE-Settings;X-XFCE-SettingsDialog;X-XFCE-SystemSettings;

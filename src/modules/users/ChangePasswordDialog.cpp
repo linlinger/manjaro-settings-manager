@@ -78,8 +78,8 @@ void ChangePasswordDialog::buttonApply_clicked()
     }
 
     // Set password
-    KAuth::Action installAction( QLatin1String( "org.manjaro.msm.users.changepassword" ) );
-    installAction.setHelperId( QLatin1String( "org.manjaro.msm.users" ) );
+    KAuth::Action installAction( QLatin1String( "org.spanningtree.msm.users.changepassword" ) );
+    installAction.setHelperId( QLatin1String( "org.spanningtree.msm.users" ) );
     QVariantMap args;
     args["arguments"] = QStringList() << username;
     args["writeArgs"] = QStringList() << password << password;

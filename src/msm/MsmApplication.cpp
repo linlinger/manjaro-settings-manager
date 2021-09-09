@@ -29,16 +29,16 @@ MsmApplication::MsmApplication( int& argc, char* argv[] )
     : QApplication( argc, argv ),
       m_mainwindow( 0 )
 {
-    setOrganizationName( "Manjaro" );
-    setOrganizationDomain( "Manjaro" );
-    setApplicationName( "Manjaro Settings Manager" );
+    setOrganizationName( "SpanningTree" );
+    setOrganizationDomain( "SpanningTree Linux" );
+    setApplicationName( "SpanningTree Settings Manager" );
     setApplicationVersion( "0.5.6" );
 }
 
 
 MsmApplication::~MsmApplication()
 {
-    qDebug() << "Shutting down Manjaro Settings Manager...";
+    qDebug() << "Shutting down SpanningTree Settings Manager...";
 }
 
 

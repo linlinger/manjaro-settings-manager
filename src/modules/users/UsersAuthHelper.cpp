@@ -161,5 +161,5 @@ UsersAuthHelper::changeimage( const QVariantMap& args )
     return ActionReply::SuccessReply();
 }
 
-KAUTH_HELPER_MAIN( "org.manjaro.msm.users", UsersAuthHelper )
+KAUTH_HELPER_MAIN( "org.spanningtree.msm.users", UsersAuthHelper )
 #include "moc_UsersAuthHelper.cpp"

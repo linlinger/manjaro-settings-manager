@@ -1,8 +1,8 @@
 [Domain]
-Name=manjaro-settings-manager
-Name[x-test]=xxmanjaro-settings-managerxx
+Name=spanningtree-settings-manager
+Name[x-test]=xxspanningtree-settings-managerxx
 Icon=kauth-example
-URL=https://github.com/manjaro/manjaro-settings-manager
+URL=https://github.com/linlinger/manjaro-settings-manager
 
 [org.manjaro.msm.languagepackages.install]
 Name=Install Language Packages

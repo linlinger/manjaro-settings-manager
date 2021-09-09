@@ -5,12 +5,12 @@ Exec=kcmshell5 msm_locale
 
 X-KDE-Library=msm_locale
 X-KDE-ServiceTypes=KCModule
-X-KDE-System-Settings-Parent-Category=manjaro
+X-KDE-System-Settings-Parent-Category=stos
 X-KDE-ParentApp=kcontrol
 X-KDE-PluginKeyword=msm_locale
 X-KDE-Keywords=locale
 X-KDE-Keywords[x-test]=xxkeyboardxx
-Categories=Qt;KDE;X-KDE-settings-system;manjaro
+Categories=Qt;KDE;X-KDE-settings-system;stos
 
 Name=Locale
 Name[ast]=Axustes de locale
@@ -42,7 +42,7 @@ Name[sl]=Krajevne nastavitve
 Name[sv]=Språkinställningar
 Name[tr]=Yerel Ayarları
 Name[uk]=Локальні налаштування
-Name[zh_CN]=本地化设定
+Name[zh_CN]=语言设定
 Name[zh_TW]=語言設定
 
 Name[el]=Τοπικές ρυθμίσεις
@@ -77,5 +77,5 @@ Comment[sl]=Dodaj in nastavi krajevne nastavitve.
 Comment[sv]=Lägg till och konfigurera språk
 Comment[tr]=Sistem yereli ekleme ve yapılandırma aracı
 Comment[uk]=Додавання і налагодження локалей
-Comment[zh_CN]=添加并设定本地化设置
+Comment[zh_CN]=添加并设定语言设置
 Comment[zh_TW]=新增與設定語言

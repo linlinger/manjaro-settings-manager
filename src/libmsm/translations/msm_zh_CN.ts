@@ -1,4 +1,6 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="zh_CN" version="2.1">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="zh_CN">
 <context>
     <name>AccountTypeDialog</name>
     <message>
@@ -82,7 +84,7 @@ It is recommended to enable those groups. Do you really want to continue?</sourc
     <message>
         <location filename="../ActionDialog.cpp" line="87"/>
         <source>Done ...</source>
-        <translation>已完成</translation>
+        <translation>已完成 ...</translation>
     </message>
 </context>
 <context>
@@ -486,7 +488,7 @@ It is recommended to enable those groups. Do you really want to continue?</sourc
     <message>
         <location filename="../../modules/locale/ui/LocaleModule.ui" line="198"/>
         <source>Collation and Sorting:</source>
-        <translation>对照并排序</translation>
+        <translation>对照并排序:</translation>
     </message>
     <message>
         <location filename="../../modules/locale/ui/LocaleModule.ui" line="208"/>
@@ -541,12 +543,12 @@ It is recommended to enable those groups. Do you really want to continue?</sourc
     <message>
         <location filename="../../modules/locale/ui/LocaleModule.ui" line="319"/>
         <source>Identification:</source>
-        <translation>标识</translation>
+        <translation>标识:</translation>
     </message>
     <message>
         <location filename="../../modules/locale/ui/LocaleModule.ui" line="329"/>
         <source>Paper:</source>
-        <translation>纸张</translation>
+        <translation>纸张:</translation>
     </message>
     <message>
         <location filename="../../modules/locale/ui/LocaleModule.ui" line="363"/>
@@ -721,7 +723,9 @@ It is recommended to enable those groups. Do you really want to continue?</sourc
         <location filename="../../notifier/notifier/Notifier.cpp" line="192"/>
         <location filename="../../notifier/notifier_kde/Notifier.cpp" line="182"/>
         <source>%n new additional language package(s) available</source>
-        <translation><numerusform>有 %n 个可用的额外语言包</numerusform></translation>
+        <translation>
+            <numerusform>有 %n 个可用的额外语言包</numerusform>
+        </translation>
     </message>
     <message>
         <location filename="../../notifier/notifier/Notifier.cpp" line="231"/>

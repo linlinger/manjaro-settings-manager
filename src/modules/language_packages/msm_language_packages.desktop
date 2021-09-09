@@ -5,12 +5,12 @@ Exec=kcmshell5 msm_language_packages
 
 X-KDE-Library=msm_language_packages
 X-KDE-ServiceTypes=KCModule
-X-KDE-System-Settings-Parent-Category=manjaro
+X-KDE-System-Settings-Parent-Category=spanningtree
 X-KDE-ParentApp=kcontrol
 X-KDE-PluginKeyword=msm_language_packages
 X-KDE-Keywords=language;packages
 X-KDE-Keywords[x-test]=xxkeyboardxx
-Categories=Qt;KDE;X-KDE-settings-system;manjaro
+Categories=Qt;KDE;X-KDE-settings-system;spanningtree;
 
 Name=Language Packages
 Name[ast]=Paquetes de llingua
@@ -77,5 +77,5 @@ Comment[sq]=Zbulimi dhe instalimin e paketave gjuhësore
 Comment[sv]=Upptäckt och installation av språkpaket
 Comment[tr]=Dil paketleri algılama ve yükleme aracı
 Comment[uk]=Виявлення та встановлення мовних пакунків
-Comment[zh_CN]=侦测并安装语言包
+Comment[zh_CN]=检测并安装语言包
 Comment[zh_TW]=偵測與安裝語言包

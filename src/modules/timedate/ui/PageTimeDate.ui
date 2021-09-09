@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>600</width>
-    <height>440</height>
+    <height>402</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,10 +16,16 @@
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
     <widget class="QGroupBox" name="timeDateGroupBox">
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
      <property name="title">
       <string>Time and Date</string>
      </property>
      <layout class="QVBoxLayout" name="verticalLayout_2">
+      <property name="sizeConstraint">
+       <enum>QLayout::SetMaximumSize</enum>
+      </property>
       <item>
        <widget class="QCheckBox" name="isNtpEnabledCheckBox">
         <property name="text">
@@ -36,8 +42,8 @@
       </item>
       <item>
        <layout class="QFormLayout" name="timeDateFormLayout">
-        <property name="labelAlignment">
-         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        <property name="sizeConstraint">
+         <enum>QLayout::SetMaximumSize</enum>
         </property>
         <item row="0" column="0">
          <widget class="QLabel" name="timeLabel">
@@ -66,11 +72,39 @@
           <property name="minimumSize">
            <size>
             <width>150</width>
-            <height>0</height>
+            <height>27</height>
            </size>
           </property>
           <property name="displayFormat">
            <string notr="true">HH:mm:ss</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="rtcLabel">
+          <property name="text">
+           <string>Hardware clock:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="utcLabel">
+          <property name="text">
+           <string>Universal time:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QLabel" name="utcTimeLabel">
+          <property name="text">
+           <string notr="true"/>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QLabel" name="rtcTimeLabel">
+          <property name="text">
+           <string notr="true"/>
           </property>
          </widget>
         </item>
@@ -101,39 +135,11 @@
           <property name="minimumSize">
            <size>
             <width>150</width>
-            <height>0</height>
+            <height>27</height>
            </size>
           </property>
           <property name="displayFormat">
            <string notr="true">yyyy-MM-dd</string>
-          </property>
-         </widget>
-        </item>
-        <item row="3" column="0">
-         <widget class="QLabel" name="rtcLabel">
-          <property name="text">
-           <string>Hardware clock:</string>
-          </property>
-         </widget>
-        </item>
-        <item row="2" column="0">
-         <widget class="QLabel" name="utcLabel">
-          <property name="text">
-           <string>Universal time:</string>
-          </property>
-         </widget>
-        </item>
-        <item row="2" column="1">
-         <widget class="QLabel" name="utcTimeLabel">
-          <property name="text">
-           <string notr="true"/>
-          </property>
-         </widget>
-        </item>
-        <item row="3" column="1">
-         <widget class="QLabel" name="rtcTimeLabel">
-          <property name="text">
-           <string notr="true"/>
           </property>
          </widget>
         </item>

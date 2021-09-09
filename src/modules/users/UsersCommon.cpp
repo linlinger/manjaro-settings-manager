@@ -147,8 +147,8 @@ UsersCommon::removeUser( QListWidgetItem* currentItem )
         removeHome = "-r";
 
     // Remove user
-    KAuth::Action installAction( QLatin1String( "org.manjaro.msm.users.remove" ) );
-    installAction.setHelperId( QLatin1String( "org.manjaro.msm.users" ) );
+    KAuth::Action installAction( QLatin1String( "org.spanningtree.msm.users.remove" ) );
+    installAction.setHelperId( QLatin1String( "org.spanningtree.msm.users" ) );
     QVariantMap args;
     args["arguments"] = QStringList() << removeHome << username;
     installAction.setArguments( args );
@@ -216,8 +216,8 @@ UsersCommon::setUserImage( Ui::PageUsers* ui )
 
     if ( !copyDest.isEmpty() )
     {
-        KAuth::Action installAction( QLatin1String( "org.manjaro.msm.users.changeimage" ) );
-        installAction.setHelperId( QLatin1String( "org.manjaro.msm.users" ) );
+        KAuth::Action installAction( QLatin1String( "org.spanningtree.msm.users.changeimage" ) );
+        installAction.setHelperId( QLatin1String( "org.spanningtree.msm.users" ) );
         QVariantMap args;
         args["copyDest"] = copyDest;
         args["filename"] = filename;

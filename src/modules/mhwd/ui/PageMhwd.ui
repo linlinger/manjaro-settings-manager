@@ -33,6 +33,9 @@
      </property>
      <item>
       <widget class="QPushButton" name="buttonInstallNonFree">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
        <property name="text">
         <string>Auto Install Proprietary Driver</string>
        </property>
@@ -40,6 +43,9 @@
      </item>
      <item>
       <widget class="QPushButton" name="buttonInstallFree">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
        <property name="text">
         <string>Auto Install Open-Source Driver</string>
        </property>

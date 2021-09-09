@@ -10,7 +10,7 @@ X-KDE-ParentApp=kcontrol
 X-KDE-PluginKeyword=msm_keyboard
 X-KDE-Keywords=keyboard
 X-KDE-Keywords[x-test]=xxkeyboardxx
-Categories=Qt;KDE;X-KDE-settings-system;manjaro
+Categories=Qt;KDE;X-KDE-settings-system;
 
 Name=Keyboard Settings
 Name[ast]=Axustes de tecláu

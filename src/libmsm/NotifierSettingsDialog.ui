@@ -16,12 +16,18 @@
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
     <widget class="QGroupBox" name="groupBox">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
      <property name="title">
       <string>Kernel Notifications</string>
      </property>
      <layout class="QVBoxLayout" name="verticalLayout_2">
       <item>
        <widget class="QCheckBox" name="checkUnsupportedKernelBox">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
         <property name="text">
          <string>Check unsupported kernels</string>
         </property>
@@ -47,6 +53,9 @@
         </item>
         <item>
          <widget class="QCheckBox" name="checkUnsupportedKernelRunningBox">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
           <property name="text">
            <string>Only notify if running an unsupported kernel</string>
           </property>
@@ -56,6 +65,9 @@
       </item>
       <item>
        <widget class="QCheckBox" name="checkNewKernelBox">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
         <property name="text">
          <string>Check new kernels</string>
         </property>
@@ -81,6 +93,9 @@
         </item>
         <item>
          <widget class="QCheckBox" name="checkNewKernelLtsBox">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
           <property name="text">
            <string>Only notify LTS kernels</string>
           </property>
@@ -108,6 +123,9 @@
         </item>
         <item>
          <widget class="QCheckBox" name="checkNewKernelRecommendedBox">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
           <property name="text">
            <string>Only notify recommended kernels</string>
           </property>

@@ -151,7 +151,7 @@ MsmWindow::buttonShowAllSettings_clicked()
     ui->listWidget->clearSelection();
 
     // Setup icon and titel
-    ui->labelHeader->setText( tr( "Manjaro Settings" ) );
+    ui->labelHeader->setText( tr( "SpaningTree Linux Settings" ) );
     ui->labelIcon->setPixmap( QPixmap( ":/images/resources/settings.png" ) );
 
     // Hide buttons
@@ -194,7 +194,7 @@ MsmWindow::closePageRequested( PageWidget* page )
 void
 MsmWindow::writePositionSettings()
 {
-    QSettings settings( "manjaro", "manjaro-settings-manager" );
+    QSettings settings( "spanningtree", "spanningtree-settings-manager" );
 
     settings.beginGroup( "mainwindow" );
 
@@ -214,7 +214,7 @@ MsmWindow::writePositionSettings()
 void
 MsmWindow::readPositionSettings()
 {
-    QSettings settings( "manjaro", "manjaro-settings-manager" );
+    QSettings settings( "spanningtree", "spanningtree-settings-manager" );
 
     settings.beginGroup( "mainwindow" );
 

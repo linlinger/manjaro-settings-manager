@@ -1,3 +1,7 @@
+#SpanningTree Linux Settings Manager
+A fork of manjaro-settings-manager
+Down below is the original README
+
 # Manjaro Settings Manager
 
 The Manjaro Settings Manager offers you a series of settings, which are
