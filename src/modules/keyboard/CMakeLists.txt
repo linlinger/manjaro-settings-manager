@@ -60,4 +60,4 @@ target_link_libraries(msm_keyboard_authhelper
 
 install(TARGETS msm_keyboard_authhelper DESTINATION ${KAUTH_HELPER_INSTALL_DIR})
 kauth_install_helper_files(msm_keyboard_authhelper org.manjaro.msm.keyboard root)
-kauth_install_actions(org.manjaro.msm.keyboard msm_keyboard.actions)
+kauth_install_actions(org.spanningtree.msm.keyboard msm_keyboard.actions)
