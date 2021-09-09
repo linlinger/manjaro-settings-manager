@@ -18,4 +18,4 @@ Exec=msm_notifier --settings
 Icon=preferences-desktop
 Terminal=false
 Type=Application
-Categories=Settings;DesktopSettings;X-LXDE-Settings;X-XFCE-SettingsDialog;X-KDE-Settings;X-XFCE-SystemSettings;
+Categories=Settings;DesktopSettings;X-LXDE-Settings;X-XFCE-SettingsDialog;X-XFCE-SystemSettings;

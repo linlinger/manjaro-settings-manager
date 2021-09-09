@@ -38,7 +38,7 @@ Notifier::Notifier( QObject* parent ) :
     QObject( parent )
 {
     m_tray = new QSystemTrayIcon( this );
-    m_tray->setIcon( QIcon::fromTheme( "manjaro-settings-manager" ) );
+    m_tray->setIcon( QIcon::fromTheme( "spanningtree-settings-manager" ) );
 
     QMenu* menu = new QMenu();
     m_tray->setContextMenu( menu );
@@ -68,13 +68,13 @@ Notifier::Notifier( QObject* parent ) :
     connect( msmKernel, &QAction::triggered,
              [this] ()
     {
-        QProcess::startDetached( "manjaro-settings-manager", QStringList() << "-m" << "msm_kernel" );
+        QProcess::startDetached( "spanningtree-settings-manager", QStringList() << "-m" << "msm_kernel" );
         m_tray->hide();
     } );
     connect( msmLanguagePackages, &QAction::triggered,
              [this] ()
     {
-        QProcess::startDetached( "manjaro-settings-manager", QStringList() << "-m" << "msm_language_packages" );
+        QProcess::startDetached( "spanningtree-settings-manager", QStringList() << "-m" << "msm_language_packages" );
         m_tray->hide();
     } );
 
@@ -194,7 +194,7 @@ Notifier::cLanguagePackage()
     {
         qDebug() << "Missing language packages found, notifying user...";
         m_tray->show();
-        m_tray->showMessage( tr( "Manjaro Settings Manager" ),
+        m_tray->showMessage( tr( "SpanningTree Settings Manager" ),
                              tr( "%n new additional language package(s) available", "", packageNumber ),
                              QSystemTrayIcon::Information,
                              10000 );
@@ -233,7 +233,7 @@ Notifier::cKernel()
         if ( foundRunning )
         {
             m_tray->show();
-            m_tray->showMessage( tr( "Manjaro Settings Manager" ),
+            m_tray->showMessage( tr( "SpanningTree Settings Manager" ),
                                  tr( "Running an unsupported kernel, please update." ),
                                  QSystemTrayIcon::Warning,
                                  10000 );
@@ -241,7 +241,7 @@ Notifier::cKernel()
         else if ( found )
         {
             m_tray->show();
-            m_tray->showMessage( tr( "Manjaro Settings Manager" ),
+            m_tray->showMessage( tr( "SpanningTree Settings Manager" ),
                                  tr( "Unsupported kernel installed in your system, please remove it." ),
                                  QSystemTrayIcon::Information,
                                  10000 );
@@ -294,7 +294,7 @@ Notifier::cKernel()
 void Notifier::showNewKernelNotification()
 {
     m_tray->show();
-    m_tray->showMessage( tr( "Manjaro Settings Manager" ),
+    m_tray->showMessage( tr( "SpanningTree Settings Manager" ),
                          tr( "Newer kernel is available, please update." ),
                          QSystemTrayIcon::Information,
                          10000 );
@@ -304,7 +304,7 @@ void Notifier::showNewKernelNotification()
 void
 Notifier::loadConfiguration()
 {
-    QSettings settings( "manjaro", "manjaro-settings-manager" );
+    QSettings settings( "spanningtree", "spanningtree-settings-manager" );
     m_checkLanguagePackage = settings.value( "notifications/checkLanguagePackages", true ).toBool();
     m_checkUnsupportedKernel = settings.value( "notifications/checkUnsupportedKernel", true ).toBool();
     m_checkUnsupportedKernelRunning = settings.value( "notifications/checkUnsupportedKernelRunning", true ).toBool();
@@ -318,7 +318,7 @@ Notifier::loadConfiguration()
 bool
 Notifier::isPackageIgnored( const QString package, const QString group )
 {
-    QSettings settings( "manjaro", "manjaro-settings-manager-Notifier" );
+    QSettings settings( "spanningtree", "spanningtree-settings-manager-Notifier" );
     settings.beginGroup( group );
     int value = settings.value( "notify_count_" + package, "0" ).toInt();
     settings.endGroup();
@@ -329,7 +329,7 @@ Notifier::isPackageIgnored( const QString package, const QString group )
 void
 Notifier::addToConfig( const QString package, const QString group )
 {
-    QSettings settings( "manjaro", "manjaro-settings-manager-Notifier" );
+    QSettings settings( "spanningtree", "spanningtree-settings-manager-Notifier" );
     settings.beginGroup( group );
     int value = settings.value( "notify_count_" + package, "0" ).toInt();
     ++value;
