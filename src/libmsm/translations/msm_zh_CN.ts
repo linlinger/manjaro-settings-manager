@@ -16,7 +16,7 @@
     <message>
         <location filename="../../modules/users/ui/AccountTypeDialog.ui" line="69"/>
         <source>Administrator</source>
-        <translation></translation>
+        <translation>管理员</translation>
     </message>
     <message>
         <location filename="../../modules/users/ui/AccountTypeDialog.ui" line="79"/>
@@ -280,7 +280,7 @@ Would you like to continue?</source>
     <message>
         <location filename="../../modules/kernel/KernelCommon.cpp" line="46"/>
         <source>Add and remove SpanningTree kernels</source>
-        <translation>添加货移除SpanningTree Linux内核</translation>
+        <translation>添加或移除SpanningTree Linux内核</translation>
     </message>
     <message>
         <location filename="../../modules/kernel/KernelCommon.cpp" line="147"/>
@@ -746,7 +746,7 @@ Would you like to continue?</source>
         <location filename="../../msm/MsmWindow.ui" line="217"/>
         <location filename="../../msm/MsmWindow.ui" line="241"/>
         <source>Quit</source>
-        <translation>推出</translation>
+        <translation>退出</translation>
     </message>
     <message>
         <location filename="../../msm/MsmWindow.ui" line="230"/>
@@ -883,7 +883,7 @@ Would you like to continue?</source>
     <message>
         <location filename="../NotifierSettingsDialog.ui" line="186"/>
         <source>Quit</source>
-        <translation>推出</translation>
+        <translation>退出</translation>
     </message>
     <message>
         <location filename="../NotifierSettingsDialog.ui" line="199"/>
@@ -975,7 +975,7 @@ Would you like to continue?</source>
     <message>
         <location filename="../../modules/language_packages/ui/PageLanguagePackages.ui" line="85"/>
         <source>Description</source>
-        <translation>秒后苏</translation>
+        <translation>描述</translation>
     </message>
     <message>
         <location filename="../../modules/language_packages/ui/PageLanguagePackages.ui" line="133"/>
@@ -1071,7 +1071,7 @@ Would you like to continue?</source>
     <message>
         <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="39"/>
         <source>Hardware clock in local time zone</source>
-        <translation>将本地时区应用与硬件时钟</translation>
+        <translation>将本地时区应用于硬件时钟</translation>
     </message>
     <message>
         <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="57"/>
