@@ -6,16 +6,16 @@ URL=https://github.com/linlinger/manjaro-settings-manager
 
 [org.spanningtree.msm.kernel.install]
 Name=Install Kernel
-Name[zh_CN]=安装系统内核需要管理员密码进行认证
-Description=Install Kernel
-Description[zh_CN]=为SpanningTree Linux安装新的系统内核
+Name[zh_CN]=为SpanningTree Linux安装新的系统内核
+Description=Admin permission is required to  install kernel
+Description[zh_CN]=安装系统内核需要管理员密码进行认证
 Policy=auth_admin
 Persistence=session
 
 [org.spanningtree.msm.kernel.remove]
-Name=Remove Kernel
-Name[zh_CN]=移除系统内核需要管理员密码进行认证
-Description=Remove Kernel
-Description[zh_CN]=从SpanningTree Linux卸载内核
+Name=Remove kernel
+Name[zh_CN]=从SpanningTree Linux卸载内核
+Description=Admin Permission is required to remove kernel
+Description[zh_CN]=移除系统内核需要管理员密码进行认证
 Policy=auth_admin
 Persistence=session

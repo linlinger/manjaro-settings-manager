@@ -6,16 +6,16 @@ URL=https://github.com/linlinger/manjaro-settings-manager
 
 [org.spanningtree.msm.languagepackages.install]
 Name=Install Language Packages
-Name[zh_CN]=安装语言包需要管理员权限
-Description=Install Language Packages
-Description[zh_CN]=为系统中的应用程序安装当前语言的语言包
+Name[zh_CN]=为系统中的应用程序安装当前语言的语言包
+Description=Admin permission is install language packages
+Description[zh_CN]=安装语言包需要管理员权限
 Policy=auth_admin
 Persistence=session
 
 [org.spanningtree.msm.languagepackages.remove]
 Name=Remove Language Packages
-Name[zh_CN]=移除语言包需要管理员权限
-Description=Remove Language Packages
-Description[zh_CN]=移除选定的语言包
+Name[zh_CN]=移除选定的语言包
+Description=Admin permission is required to remove language packages
+Description[zh_CN]=移除语言包需要管理员权限
 Policy=auth_admin
 Persistence=session

@@ -38,9 +38,9 @@ Persistence=session
 
 [org.spanningtree.msm.users.changeimage]
 Name=Change Image
-Name[zh_CN]=更改用户头像需要管理员权限
+Name[zh_CN]=修改用户头像需要管理员权限
 Description=Change Image
-Description[zh_CN]=修改用户头像
+Description[zh_CN]=更改用户头像
 Policy=auth_admin
 Persistence=session
 

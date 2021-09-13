@@ -7,7 +7,7 @@ URL=https://github.com/linlinger/manjaro-settings-manager
 [org.spanningtree.msm.locale.save]
 Name=Save Locale Settings
 Name[zh_CN]=保存语言设定需要管理员权限
-Description=Save Locale Settings
+Description=Admin permission is required to save locale settings
 Description[zh_CN]=保存语言设定
 Policy=auth_admin
 Persistence=session
