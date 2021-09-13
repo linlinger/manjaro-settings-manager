@@ -647,7 +647,7 @@ It is recommended to enable those groups. Do you really want to continue?</sourc
     <message>
         <location filename="../../msm/MsmWindow.ui" line="14"/>
         <source>SpanningTree Settings Manager</source>
-        <translation>SpanningTree Linux  设置管理器</translation>
+        <translation>SpanningTree Linux 设置管理器</translation>
     </message>
     <message>
         <location filename="../../msm/MsmWindow.ui" line="185"/>
@@ -678,7 +678,7 @@ It is recommended to enable those groups. Do you really want to continue?</sourc
     <message>
         <location filename="../../msm/MsmWindow.cpp" line="154"/>
         <source>SpanningTree Settings</source>
-        <translation>SpanningTree 设定</translation>
+        <translation>SpanningTree Linux设定</translation>
     </message>
 </context>
 <context>
@@ -872,7 +872,7 @@ It is recommended to enable those groups. Do you really want to continue?</sourc
     <message>
         <location filename="../../modules/language_packages/ui/PageLanguagePackages.ui" line="55"/>
         <source>Install Packages</source>
-        <translation>已安装的软件包</translation>
+        <translation>安装选定的语言包</translation>
     </message>
     <message>
         <location filename="../../modules/language_packages/ui/PageLanguagePackages.ui" line="80"/>

@@ -75,66 +75,64 @@ It is recommended to enable those groups. Do you really want to continue?</sourc
 <context>
     <name>ActionDialog</name>
     <message>
-        <location filename="../ActionDialog.cpp" line="45"/>
+        <location filename="../ActionDialog.cpp" line="46"/>
         <source>Do you really want to continue?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ActionDialog.cpp" line="98"/>
+        <location filename="../ActionDialog.cpp" line="112"/>
         <source>Show Details</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ActionDialog.cpp" line="106"/>
+        <location filename="../ActionDialog.cpp" line="120"/>
         <source>Hide Details</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ActionDialog.cpp" line="120"/>
+        <location filename="../ActionDialog.cpp" line="135"/>
         <source>Please wait while your system is being modified</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ActionDialog.cpp" line="121"/>
-        <location filename="../ActionDialog.cpp" line="122"/>
+        <location filename="../ActionDialog.cpp" line="136"/>
+        <location filename="../ActionDialog.cpp" line="137"/>
         <source>Starting</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ActionDialog.cpp" line="147"/>
-        <location filename="../ActionDialog.cpp" line="149"/>
-        <location filename="../ActionDialog.cpp" line="191"/>
+        <location filename="../ActionDialog.cpp" line="163"/>
         <source>Changes failed, click on &apos;Show Details&apos; for more information</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ActionDialog.cpp" line="162"/>
+        <location filename="../ActionDialog.cpp" line="176"/>
         <source>You are not authorised to make these changes</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ActionDialog.cpp" line="164"/>
+        <location filename="../ActionDialog.cpp" line="178"/>
         <source>Some Error occurred during authorization</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ActionDialog.cpp" line="166"/>
+        <location filename="../ActionDialog.cpp" line="180"/>
         <source>Invalid authorization status</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ActionDialog.cpp" line="168"/>
+        <location filename="../ActionDialog.cpp" line="182"/>
         <source>Authorization canceled by you</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ActionDialog.cpp" line="183"/>
+        <location filename="../ActionDialog.cpp" line="161"/>
         <source>Changes were made successfully</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../ActionDialog.cpp" line="197"/>
         <location filename="../ActionDialog.cpp" line="198"/>
+        <location filename="../ActionDialog.cpp" line="199"/>
         <source>Done ...</source>
         <translation type="unfinished"></translation>
     </message>
@@ -247,11 +245,6 @@ It is recommended to enable those groups. Do you really want to continue?</sourc
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../modules/kernel/KernelCommon.cpp" line="46"/>
-        <source>Add and remove manjaro kernels</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../modules/kernel/KernelCommon.cpp" line="77"/>
         <source>Install Linux %1</source>
         <translation type="unfinished"></translation>
@@ -280,6 +273,11 @@ Would you like to continue?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../../modules/kernel/KernelCommon.cpp" line="46"/>
+        <source>Add and remove SpanningTree kernels</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../../modules/kernel/KernelCommon.cpp" line="147"/>
         <source>Linux %1.%2 changelog</source>
         <translation type="unfinished"></translation>
@@ -288,60 +286,60 @@ Would you like to continue?</source>
 <context>
     <name>KernelListViewDelegate</name>
     <message>
-        <location filename="../../modules/kernel/KernelListViewDelegate.cpp" line="95"/>
+        <location filename="../../modules/kernel/KernelListViewDelegate.cpp" line="122"/>
         <source>LTS</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../modules/kernel/KernelListViewDelegate.cpp" line="96"/>
+        <location filename="../../modules/kernel/KernelListViewDelegate.cpp" line="123"/>
         <source>Recommended</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../modules/kernel/KernelListViewDelegate.cpp" line="97"/>
+        <location filename="../../modules/kernel/KernelListViewDelegate.cpp" line="124"/>
         <source>Running</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../modules/kernel/KernelListViewDelegate.cpp" line="98"/>
+        <location filename="../../modules/kernel/KernelListViewDelegate.cpp" line="125"/>
         <source>Installed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../modules/kernel/KernelListViewDelegate.cpp" line="99"/>
+        <location filename="../../modules/kernel/KernelListViewDelegate.cpp" line="126"/>
         <source>Unsupported</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../modules/kernel/KernelListViewDelegate.cpp" line="102"/>
+        <location filename="../../modules/kernel/KernelListViewDelegate.cpp" line="129"/>
         <source>Real-time</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../modules/kernel/KernelListViewDelegate.cpp" line="200"/>
-        <location filename="../../modules/kernel/KernelListViewDelegate.cpp" line="271"/>
+        <location filename="../../modules/kernel/KernelListViewDelegate.cpp" line="77"/>
+        <location filename="../../modules/kernel/KernelListViewDelegate.cpp" line="276"/>
         <source>Changelog</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../modules/kernel/KernelListViewDelegate.cpp" line="100"/>
+        <location filename="../../modules/kernel/KernelListViewDelegate.cpp" line="127"/>
         <source>Custom</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../modules/kernel/KernelListViewDelegate.cpp" line="101"/>
+        <location filename="../../modules/kernel/KernelListViewDelegate.cpp" line="128"/>
         <source>Experimental</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../modules/kernel/KernelListViewDelegate.cpp" line="198"/>
-        <location filename="../../modules/kernel/KernelListViewDelegate.cpp" line="269"/>
+        <location filename="../../modules/kernel/KernelListViewDelegate.cpp" line="75"/>
+        <location filename="../../modules/kernel/KernelListViewDelegate.cpp" line="274"/>
         <source>Remove</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../modules/kernel/KernelListViewDelegate.cpp" line="199"/>
-        <location filename="../../modules/kernel/KernelListViewDelegate.cpp" line="270"/>
+        <location filename="../../modules/kernel/KernelListViewDelegate.cpp" line="76"/>
+        <location filename="../../modules/kernel/KernelListViewDelegate.cpp" line="275"/>
         <source>Install</source>
         <translation type="unfinished"></translation>
     </message>
@@ -731,7 +729,7 @@ Would you like to continue?</source>
     <name>MsmWindow</name>
     <message>
         <location filename="../../msm/MsmWindow.ui" line="20"/>
-        <source>Manjaro Settings Manager</source>
+        <source>SpanningTree Linux Settings Manager</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -762,7 +760,7 @@ Would you like to continue?</source>
     </message>
     <message>
         <location filename="../../msm/MsmWindow.cpp" line="154"/>
-        <source>Manjaro Settings</source>
+        <source>SpaningTree Linux Settings</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -792,21 +790,16 @@ Would you like to continue?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../notifier/notifier/Notifier.cpp" line="191"/>
-        <location filename="../../notifier/notifier/Notifier.cpp" line="230"/>
-        <location filename="../../notifier/notifier/Notifier.cpp" line="238"/>
-        <location filename="../../notifier/notifier/Notifier.cpp" line="291"/>
-        <location filename="../../notifier/notifier_kde/Notifier.cpp" line="40"/>
-        <location filename="../../notifier/notifier_kde/Notifier.cpp" line="181"/>
-        <location filename="../../notifier/notifier_kde/Notifier.cpp" line="220"/>
-        <location filename="../../notifier/notifier_kde/Notifier.cpp" line="228"/>
-        <location filename="../../notifier/notifier_kde/Notifier.cpp" line="281"/>
-        <source>Manjaro Settings Manager</source>
+        <location filename="../../notifier/notifier/Notifier.cpp" line="197"/>
+        <location filename="../../notifier/notifier/Notifier.cpp" line="236"/>
+        <location filename="../../notifier/notifier/Notifier.cpp" line="244"/>
+        <location filename="../../notifier/notifier/Notifier.cpp" line="297"/>
+        <source>SpanningTree Settings Manager</source>
         <translation type="unfinished"></translation>
     </message>
     <message numerus="yes">
-        <location filename="../../notifier/notifier/Notifier.cpp" line="192"/>
-        <location filename="../../notifier/notifier_kde/Notifier.cpp" line="182"/>
+        <location filename="../../notifier/notifier/Notifier.cpp" line="198"/>
+        <location filename="../../notifier/notifier_kde/Notifier.cpp" line="187"/>
         <source>%n new additional language package(s) available</source>
         <translation type="unfinished">
             <numerusform></numerusform>
@@ -814,73 +807,82 @@ Would you like to continue?</source>
         </translation>
     </message>
     <message>
-        <location filename="../../notifier/notifier/Notifier.cpp" line="231"/>
-        <location filename="../../notifier/notifier_kde/Notifier.cpp" line="221"/>
+        <location filename="../../notifier/notifier/Notifier.cpp" line="237"/>
+        <location filename="../../notifier/notifier_kde/Notifier.cpp" line="226"/>
         <source>Running an unsupported kernel, please update.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../notifier/notifier/Notifier.cpp" line="239"/>
-        <location filename="../../notifier/notifier_kde/Notifier.cpp" line="229"/>
+        <location filename="../../notifier/notifier/Notifier.cpp" line="245"/>
+        <location filename="../../notifier/notifier_kde/Notifier.cpp" line="234"/>
         <source>Unsupported kernel installed in your system, please remove it.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../notifier/notifier/Notifier.cpp" line="292"/>
-        <location filename="../../notifier/notifier_kde/Notifier.cpp" line="282"/>
+        <location filename="../../notifier/notifier/Notifier.cpp" line="298"/>
+        <location filename="../../notifier/notifier_kde/Notifier.cpp" line="287"/>
         <source>Newer kernel is available, please update.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../notifier/notifier_kde/Notifier.cpp" line="41"/>
+        <location filename="../../notifier/notifier_kde/Notifier.cpp" line="186"/>
+        <location filename="../../notifier/notifier_kde/Notifier.cpp" line="225"/>
+        <location filename="../../notifier/notifier_kde/Notifier.cpp" line="233"/>
+        <location filename="../../notifier/notifier_kde/Notifier.cpp" line="286"/>
+        <source>Spanningtree Settings Manager</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>NotifierSettingsDialog</name>
     <message>
-        <location filename="../NotifierSettingsDialog.ui" line="20"/>
+        <location filename="../NotifierSettingsDialog.ui" line="23"/>
         <source>Kernel Notifications</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../NotifierSettingsDialog.ui" line="26"/>
+        <location filename="../NotifierSettingsDialog.ui" line="32"/>
         <source>Check unsupported kernels</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../NotifierSettingsDialog.ui" line="51"/>
+        <location filename="../NotifierSettingsDialog.ui" line="60"/>
         <source>Only notify if running an unsupported kernel</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../NotifierSettingsDialog.ui" line="60"/>
+        <location filename="../NotifierSettingsDialog.ui" line="72"/>
         <source>Check new kernels</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../NotifierSettingsDialog.ui" line="85"/>
+        <location filename="../NotifierSettingsDialog.ui" line="100"/>
         <source>Only notify LTS kernels</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../NotifierSettingsDialog.ui" line="112"/>
+        <location filename="../NotifierSettingsDialog.ui" line="130"/>
         <source>Only notify recommended kernels</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../NotifierSettingsDialog.ui" line="124"/>
+        <location filename="../NotifierSettingsDialog.ui" line="142"/>
         <source>Language Packs Notifications</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../NotifierSettingsDialog.ui" line="130"/>
+        <location filename="../NotifierSettingsDialog.ui" line="148"/>
         <source>Check missing language packs</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../NotifierSettingsDialog.ui" line="168"/>
+        <location filename="../NotifierSettingsDialog.ui" line="186"/>
         <source>Quit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../NotifierSettingsDialog.ui" line="181"/>
+        <location filename="../NotifierSettingsDialog.ui" line="199"/>
         <source>Apply</source>
         <translation type="unfinished"></translation>
     </message>
@@ -995,37 +997,47 @@ Would you like to continue?</source>
 <context>
     <name>PageMhwd</name>
     <message>
-        <location filename="../../modules/mhwd/ui/PageMhwd.ui" line="87"/>
+        <location filename="../../modules/mhwd/ui/PageMhwd.ui" line="74"/>
         <source>Driver</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../modules/mhwd/ui/PageMhwd.ui" line="92"/>
+        <location filename="../../modules/mhwd/ui/PageMhwd.ui" line="79"/>
         <source>Open-source</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../modules/mhwd/ui/PageMhwd.ui" line="97"/>
+        <location filename="../../modules/mhwd/ui/PageMhwd.ui" line="84"/>
         <source>Installed</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../modules/mhwd/ui/PageMhwd.ui" line="105"/>
+        <location filename="../../modules/mhwd/ui/PageMhwd.ui" line="92"/>
         <source>Show all devices</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../modules/mhwd/ui/PageMhwd.ui" line="124"/>
+        <location filename="../../modules/mhwd/ui/PageMhwd.ui" line="111"/>
         <source>Reinstall</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../modules/mhwd/ui/PageMhwd.ui" line="114"/>
+        <location filename="../../modules/mhwd/ui/PageMhwd.ui" line="101"/>
         <source>Install</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../modules/mhwd/ui/PageMhwd.ui" line="119"/>
+        <location filename="../../modules/mhwd/ui/PageMhwd.ui" line="40"/>
+        <source>Auto Install Proprietary Driver</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../modules/mhwd/ui/PageMhwd.ui" line="50"/>
+        <source>Auto Install Open-Source Driver</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../modules/mhwd/ui/PageMhwd.ui" line="106"/>
         <source>Remove</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1033,77 +1045,77 @@ Would you like to continue?</source>
 <context>
     <name>PageTimeDate</name>
     <message>
-        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="20"/>
+        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="23"/>
         <source>Time and Date</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="26"/>
+        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="32"/>
         <source>Set time and date automatically</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="148"/>
+        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="154"/>
         <source>Time Zone</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="197"/>
+        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="203"/>
         <source>Change Time Zone</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="33"/>
+        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="39"/>
         <source>Hardware clock in local time zone</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="51"/>
+        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="57"/>
         <source>Time:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="86"/>
+        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="120"/>
         <source>Date:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="115"/>
+        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="86"/>
         <source>Hardware clock:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="122"/>
+        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="93"/>
         <source>Universal time:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="165"/>
+        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="171"/>
         <source>Time zone:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="206"/>
+        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="212"/>
         <source>Country:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="246"/>
+        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="252"/>
         <source>Has daylight time?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="276"/>
+        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="282"/>
         <source>Is daylight time?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="306"/>
+        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="312"/>
         <source>Has transitions?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="317"/>
+        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="323"/>
         <source>Next transition:</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1210,17 +1222,17 @@ Line %2, column %3</source>
 <context>
     <name>TimeDateCommon</name>
     <message>
-        <location filename="../../modules/timedate/TimeDateCommon.cpp" line="38"/>
+        <location filename="../../modules/timedate/TimeDateCommon.cpp" line="36"/>
         <source>Time and Date</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../modules/timedate/TimeDateCommon.cpp" line="45"/>
+        <location filename="../../modules/timedate/TimeDateCommon.cpp" line="43"/>
         <source>Time and date configuration</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../modules/timedate/TimeDateCommon.cpp" line="138"/>
+        <location filename="../../modules/timedate/TimeDateCommon.cpp" line="144"/>
         <source>none</source>
         <translation type="unfinished"></translation>
     </message>

@@ -151,7 +151,7 @@ MsmWindow::buttonShowAllSettings_clicked()
     ui->listWidget->clearSelection();
 
     // Setup icon and titel
-    ui->labelHeader->setText( tr( "SpaningTree Linux 设置" ) );
+    ui->labelHeader->setText( tr( "SpaningTree Linux Settings" ) );
     ui->labelIcon->setPixmap( QPixmap( ":/images/resources/settings.png" ) );
 
     // Hide buttons

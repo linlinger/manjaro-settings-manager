@@ -17,7 +17,7 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>SpanningTree 设置管理器</string>
+   <string>SpanningTree Linux Settings Manager</string>
   </property>
   <property name="windowIcon">
    <iconset resource="msm.qrc">
