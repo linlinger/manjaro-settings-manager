@@ -105,7 +105,7 @@ It is recommended to enable those groups. Do you really want to continue?</sourc
     <message>
         <location filename="../ActionDialog.cpp" line="163"/>
         <source>Changes failed, click on &apos;Show Details&apos; for more information</source>
-        <translation>系统更改失败，请点击“显示详细信息”查看详细信息</translation>
+        <translation>语言包更改失败，请点击“显示详细信息”查看详细信息</translation>
     </message>
     <message>
         <location filename="../ActionDialog.cpp" line="176"/>
