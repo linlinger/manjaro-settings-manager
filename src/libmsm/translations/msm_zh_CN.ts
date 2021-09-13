@@ -964,7 +964,7 @@ Would you like to continue?</source>
     <message>
         <location filename="../../modules/language_packages/ui/PageLanguagePackages.ui" line="55"/>
         <source>Install Packages</source>
-        <translation>安装选定的语言包</translation>
+        <translation>安装缺失的语言包</translation>
     </message>
     <message>
         <location filename="../../modules/language_packages/ui/PageLanguagePackages.ui" line="80"/>
