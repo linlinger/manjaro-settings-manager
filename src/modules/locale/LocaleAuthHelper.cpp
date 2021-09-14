@@ -164,5 +164,5 @@ LocaleAuthHelper::setSystemLocale( const QStringList localeList )
 }
 
 
-KAUTH_HELPER_MAIN( "org.manjaro.msm.locale", LocaleAuthHelper )
+KAUTH_HELPER_MAIN( "org.spanningtree.msm.locale", LocaleAuthHelper )
 #include "moc_LocaleAuthHelper.cpp"
