@@ -128,7 +128,7 @@ MsmWindow::listWidget_itemActivated( QListWidgetItem* current )
     ui->buttonApply->setEnabled( false );
     ui->buttonApply->setVisible( item->page->getShowApplyButton() );
 
-    // Setup icon and titel
+    // Setup icon and title
     ui->labelHeader->setText( item->page->getTitle() );
     ui->labelIcon->setPixmap( item->page->getIcon() );
 
