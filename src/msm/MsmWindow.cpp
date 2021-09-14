@@ -44,7 +44,7 @@ MsmWindow::MsmWindow( QWidget* parent ) :
     ui->listWidget->addSeparator( tr( "System" ) );
     addPageWidget( pageLanguage );
     addPageWidget( pageLanguagePackages );
-    addPageWidget( pageKernel );
+    //addPageWidget( pageKernel );
     addPageWidget( pageUsers );
     addPageWidget( pageTimeDate );
     ui->listWidget->addSeparator( tr( "Hardware" ) );
