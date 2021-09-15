@@ -4,7 +4,7 @@ Name[x-test]=xxspanningtree-settings-managerxx
 Icon=kauth-example
 URL=https://github.com/linlinger/manjaro-settings-manager
 
-[org.manjaro.msm.keyboard.save]
+[org.spanningtree.msm.keyboard.save]
 Name=Save Keyboard Settings
 Name[zh_CN]=保存键盘设置
 Description=Admin permission is required to save keyboard settings

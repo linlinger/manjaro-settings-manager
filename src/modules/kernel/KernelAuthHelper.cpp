@@ -65,5 +65,5 @@ KernelAuthHelper::runPacman( const QVariantMap& args )
     return actionReply;
 }
 
-KAUTH_HELPER_MAIN( "org.manjaro.msm.kernel", KernelAuthHelper )
+KAUTH_HELPER_MAIN( "org.spanningtree.msm.kernel", KernelAuthHelper )
 #include "moc_KernelAuthHelper.cpp"
