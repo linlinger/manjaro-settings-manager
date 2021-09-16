@@ -43,9 +43,6 @@ Notifier::Notifier( QObject* parent ) :
     QMenu* menu = new QMenu();
     m_tray->setContextMenu( menu );
 
-    QAction* msmKernel = new QAction( QIcon( ":/icons/tux-manjaro.png" ),
-                                      tr ( "Kernels" ),
-                                      menu );
     QAction* msmLanguagePackages = new QAction(
         QIcon( ":/icons/language.png" ),
         tr ( "Language packages" ),
@@ -59,18 +56,11 @@ Notifier::Notifier( QObject* parent ) :
         tr ( "Options" ),
         menu );
 
-    menu->addAction( msmKernel );
     menu->addAction( msmLanguagePackages );
     menu->addAction( optionsAction );
     menu->addSeparator();
     menu->addAction( quitAction );
 
-    connect( msmKernel, &QAction::triggered,
-             [this] ()
-    {
-        QProcess::startDetached( "spanningtree-settings-manager", QStringList() << "-m" << "msm_kernel" );
-        m_tray->hide();
-    } );
     connect( msmLanguagePackages, &QAction::triggered,
              [this] ()
     {
@@ -105,9 +95,6 @@ Notifier::Notifier( QObject* parent ) :
         {
             if ( m_checkLanguagePackage )
                 cLanguagePackage();
-
-            if ( m_checkKernel )
-                cKernel();
 
             // 12 hours
             m_timer->setInterval( 12 * 60 * 60 * 1000 );
@@ -205,113 +192,11 @@ Notifier::cLanguagePackage()
     }
 }
 
-
-void
-Notifier::cKernel()
-{
-    KernelModel kernelModel;
-    kernelModel.update();
-
-    QList< Kernel > unsupportedKernels = kernelModel.unsupportedKernels();
-    if ( m_checkUnsupportedKernel && !unsupportedKernels.isEmpty() )
-    {
-        bool foundRunning = false;
-        bool found = false;
-        foreach ( Kernel kernel, unsupportedKernels )
-        {
-            if ( isPackageIgnored( kernel.package(), "unsupported_kernel" ) )
-                continue;
-
-            if ( m_checkUnsupportedKernelRunning && kernel.isRunning() )
-                foundRunning = true;
-            else
-                found = true;
-
-            addToConfig( kernel.package(), "unsupported_kernel" );
-        }
-
-        if ( foundRunning )
-        {
-            m_tray->show();
-            m_tray->showMessage( tr( "SpanningTree Settings Manager" ),
-                                 tr( "Running an unsupported kernel, please update." ),
-                                 QSystemTrayIcon::Warning,
-                                 10000 );
-        }
-        else if ( found )
-        {
-            m_tray->show();
-            m_tray->showMessage( tr( "SpanningTree Settings Manager" ),
-                                 tr( "Unsupported kernel installed in your system, please remove it." ),
-                                 QSystemTrayIcon::Information,
-                                 10000 );
-        }
-    }
-
-    if ( m_checkNewKernel )
-    {
-        QList<Kernel> newKernels;
-        Kernel latestInstalled = kernelModel.latestInstalledKernel();
-        // When it return and empty package string, it means we couldn't find the latest kernel
-        if ( !latestInstalled.package().isEmpty() )
-            newKernels = kernelModel.newerKernels( kernelModel.latestInstalledKernel() );
-        QList<Kernel> newLtsRecommendedKernels;
-        QList<Kernel> newLtsKernels;
-        QList<Kernel> newRecommendedKernels;
-        QList<Kernel> newNotIgnoredKernels;
-        foreach ( Kernel kernel, newKernels )
-        {
-            if ( isPackageIgnored( kernel.package(), "new_kernel" ) )
-                continue;
-
-            newNotIgnoredKernels << kernel;
-            if ( kernel.isRecommended() && kernel.isLts() )
-            {
-                newLtsRecommendedKernels << kernel;
-                newLtsKernels << kernel;
-                newRecommendedKernels << kernel;
-            }
-            else if ( kernel.isLts() )
-                newLtsKernels << kernel;
-            else if ( kernel.isRecommended() )
-                newRecommendedKernels << kernel;
-
-            addToConfig( kernel.package(), "new_kernel" );
-        }
-
-        if ( m_checkNewKernelLts && m_checkNewKernelRecommended && !newLtsRecommendedKernels.isEmpty() )
-            showNewKernelNotification();
-        else if ( m_checkNewKernelLts && !newLtsKernels.isEmpty() )
-            showNewKernelNotification();
-        else if ( m_checkNewKernelRecommended && !newRecommendedKernels.isEmpty() )
-            showNewKernelNotification();
-        else if ( !newNotIgnoredKernels.isEmpty() )
-            showNewKernelNotification();
-    }
-}
-
-
-void Notifier::showNewKernelNotification()
-{
-    m_tray->show();
-    m_tray->showMessage( tr( "SpanningTree Settings Manager" ),
-                         tr( "Newer kernel is available, please update." ),
-                         QSystemTrayIcon::Information,
-                         10000 );
-}
-
-
 void
 Notifier::loadConfiguration()
 {
     QSettings settings( "spanningtree", "spanningtree-settings-manager" );
     m_checkLanguagePackage = settings.value( "notifications/checkLanguagePackages", true ).toBool();
-    m_checkUnsupportedKernel = settings.value( "notifications/checkUnsupportedKernel", true ).toBool();
-    m_checkUnsupportedKernelRunning = settings.value( "notifications/checkUnsupportedKernelRunning", true ).toBool();
-    m_checkNewKernel = settings.value( "notifications/checkNewKernel", true ).toBool();
-    m_checkNewKernelLts = settings.value( "notifications/checkNewKernelLts", true ).toBool();
-    m_checkNewKernelRecommended = settings.value( "notifications/checkNewKernelRecommended", false ).toBool();
-    m_checkKernel = m_checkUnsupportedKernel | m_checkNewKernel;
 }
 
 
