@@ -27,6 +27,8 @@
 #include <QtCore/QSet>
 
 #include <QDebug>
+#include <QProgressDialog>
+#include <QTimer>
 
 ActionReply
 LocaleAuthHelper::save( const QVariantMap& args )
@@ -120,21 +122,24 @@ LocaleAuthHelper::updateLocaleGen( QStringList locales )
 }
 
         
-        progDlg = new QProgressDialog();
-        progDlg->setWindowTitle("Operation in progress ..."); 
-        progDlg->setFixedWidth(300);
-        progDlg->setRange(0, 100);
-        progDlg->show();
-        timer = new QTimer();
-        currentValue = 0;
-        progDlg->setValue(currentValue);
-        connect(timer, SIGNAL(timeout()), this, SLOT(updateProgressDialog()));
-        timer->start(100);//开启一个没有终点的定时器
-     
+
     //执行耗时操作。。。
 bool
 LocaleAuthHelper::generateLocaleGen()
 {
+//Here we gonna set a Qprogress dialog when the thread is running.
+    QProgressDialog progDlg;
+    progDlg.setWindowTitle("Please wait...");
+    progDlg.setFixedWidth(300);
+    progDlg.setRange(0, 100);
+    progDlg.show();
+    QTimer *timer = new QTimer(this);
+    currentValue = 0;
+    progDlg.setValue(currentValue);
+    connect(timer, SIGNAL(timeout()), this, SLOT(updateProgressDialog()));
+    timer->start(100);//开启一个没有终点的定时器
+//The thread will do its thing
+
     QProcess localeGen;
     localeGen.start( "/usr/bin/locale-gen" );
     connect( &localeGen, &QProcess::readyRead,
@@ -153,6 +158,27 @@ LocaleAuthHelper::generateLocaleGen()
     if ( !localeGen.waitForFinished( 60000 ) )
         return false;
     return true;
+
+        //耗时操作完成后，关闭进度对话框
+        timer->stop();
+        if(currentValue != 100)
+            currentValue = 100
+        progDlg.setValue(currentValue);//进度达到最大值
+         progDlg.close();//关闭进度对话框
+
+        //借助定时器，不断更新进度条，直到耗时操纵结束
+        void updateProgressDialog()
+        {
+            currentValue++;
+            if( currentValue == 100 )
+                currentValue = 0;
+            progDlg ->setValue(currentValue);
+            QCoreApplication::processEvents();//避免界面冻结
+            if(progDlg->wasCanceled())
+                progDlg->setHidden(true);//隐藏对话框
+        }
+
+    }
 }
 
 
@@ -173,29 +199,6 @@ LocaleAuthHelper::setSystemLocale( const QStringList localeList )
     if ( reply.type() == QDBusMessage::ErrorMessage )
         return false;
     return true;
-
-
-
-    //耗时操作完成后，关闭进度对话框
-      timer->stop();//停止定时器
-      if(currentValue != 100)
-          currentValue = 100;
-      progDlg->setValue(currentValue);//进度达到最大值
-      delete progDlg;//关闭进度对话框
-     
-    //借助定时器，不断更新进度条，直到耗时操纵结束
-    void updateProgressDialog()
-    {
-        currentValue++;  
-        if( currentValue == 100 )  
-            currentValue = 0;  
-        progDlg ->setValue(currentValue);
-        QCoreApplication::processEvents();//避免界面冻结
-        if(progDlg->wasCanceled())
-            progDlg->setHidden(true);//隐藏对话框
-    }
-
-}
 
 
 KAUTH_HELPER_MAIN( "org.spanningtree.msm.locale", LocaleAuthHelper )
