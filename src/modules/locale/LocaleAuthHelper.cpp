@@ -123,6 +123,23 @@ LocaleAuthHelper::updateLocaleGen( QStringList locales )
 bool
 LocaleAuthHelper::generateLocaleGen()
 {
+
+
+    //新建对象，参数含义：对话框正文，取消按钮名称，进度条范围
+    pd = new QProgressDialog("正在保存...","取消",0,100,this);
+    //模态对话框
+    pd->setWindowModality(Qt::WindowModal);
+    //如果进度条运行的时间小于5，进度条就不会显示，默认是4S
+    pd->setMinimumDuration(5);
+    //设置标题
+    pd->setWindowTitle("请稍后");
+    //显示处理框
+    pd->show();
+    //处理过程。。。
+    t = new QTimer(this);
+    connect(t, SIGNAL(timeout()), this, SLOT(perform()));
+    t->start(1000);
+
     QProcess localeGen;
     localeGen.start( "/usr/bin/locale-gen" );
     connect( &localeGen, &QProcess::readyRead,
@@ -141,6 +158,12 @@ LocaleAuthHelper::generateLocaleGen()
     if ( !localeGen.waitForFinished( 60000 ) )
         return false;
     return true;
+
+    t->stop();
+    steps = 0;
+    delete pd;
+
+
 }
 
 
