@@ -29,6 +29,7 @@
 #include <QDebug>
 #include <QProgressDialog>
 #include <QTimer>
+#include <QCoreApplication>
 
 ActionReply
 LocaleAuthHelper::save( const QVariantMap& args )
@@ -138,6 +139,9 @@ LocaleAuthHelper::generateLocaleGen()
     progDlg.setValue(currentValue);
     connect(timer, SIGNAL(timeout()), this, SLOT(updateProgressDialog()));
     timer->start(100);//开启一个没有终点的定时器
+    QCoreApplication::processEvents();//避免界面冻结
+        if(progDlg.wasCanceled())
+            progDlg.setHidden(true);//隐藏对话框
 //The thread will do its thing
 
     QProcess localeGen;
@@ -162,44 +166,31 @@ LocaleAuthHelper::generateLocaleGen()
         //耗时操作完成后，关闭进度对话框
         timer->stop();
         if(currentValue != 100)
-            currentValue = 100
+            currentValue = 100;
         progDlg.setValue(currentValue);//进度达到最大值
          progDlg.close();//关闭进度对话框
 
-        //借助定时器，不断更新进度条，直到耗时操纵结束
-        void updateProgressDialog()
-        {
-            currentValue++;
-            if( currentValue == 100 )
-                currentValue = 0;
-            progDlg ->setValue(currentValue);
-            QCoreApplication::processEvents();//避免界面冻结
-            if(progDlg->wasCanceled())
-                progDlg->setHidden(true);//隐藏对话框
-        }
+
 
     }
-}
-
 
 bool
-LocaleAuthHelper::setSystemLocale( const QStringList localeList )
-{
-    QDBusInterface dbusInterface( "org.freedesktop.locale1",
-                                  "/org/freedesktop/locale1",
-                                  "org.freedesktop.locale1",
-                                  QDBusConnection::systemBus() );
+LocaleAuthHelper::setSystemLocale( const QStringList localeList ) {
+    QDBusInterface dbusInterface("org.freedesktop.locale1",
+                                 "/org/freedesktop/locale1",
+                                 "org.freedesktop.locale1",
+                                 QDBusConnection::systemBus());
     /*
      * asb
      * array_string -> locale
      * boolean -> arg_ask_password
      */
     QDBusMessage reply;
-    reply = dbusInterface.call( "SetLocale", localeList, true );
-    if ( reply.type() == QDBusMessage::ErrorMessage )
+    reply = dbusInterface.call("SetLocale", localeList, true);
+    if (reply.type() == QDBusMessage::ErrorMessage)
         return false;
     return true;
+}
 
+    KAUTH_HELPER_MAIN("org.spanningtree.msm.locale", LocaleAuthHelper)
 
-KAUTH_HELPER_MAIN( "org.spanningtree.msm.locale", LocaleAuthHelper )
-#include "moc_LocaleAuthHelper.cpp"
