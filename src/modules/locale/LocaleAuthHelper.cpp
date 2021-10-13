@@ -134,7 +134,7 @@ LocaleAuthHelper::generateLocaleGen()
     progDlg.setRange(0, 100);
     progDlg.show();
     QTimer *timer = new QTimer(this);
-    currentValue = 0;
+        auto currentValue = 0;
     progDlg.setValue(currentValue);
     connect(timer, SIGNAL(timeout()), this, SLOT(updateProgressDialog()));
     timer->start(100);//开启一个没有终点的定时器
