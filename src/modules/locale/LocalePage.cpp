@@ -30,13 +30,14 @@
 #include <QtCore/QFile>
 #include <QtCore/QTextStream>
 #include <QtDBus/QDBusInterface>
+#include <QTimer>
 #include <QtWidgets/QMenu>
 
 #include <QDebug>
 #include <QProgressDialog>
 #include <QCoreApplication>
 
-LocalePage::LocalePage( QWidget* parent ) :
+__attribute__((unused)) LocalePage::LocalePage( QWidget* parent ) :
     PageWidget( parent ),
     ui( new Ui::LocaleModule ),
     m_enabledLocalesModel( new EnabledLocalesModel ),
@@ -180,7 +181,6 @@ LocalePage::LocalePage( QWidget* parent ) :
     connect( m_enabledLocalesModel, &QAbstractListModel::dataChanged,
              [=] ( const QModelIndex &topLeft, const QModelIndex &bottomRight, const QVector<int>& roles )
     {
-        Q_UNUSED( bottomRight );
         if ( roles.contains( EnabledLocalesModel::AddressRole ) )
         {
             ui->addressComboBox->setCurrentIndex( topLeft.row() );
@@ -388,7 +388,7 @@ LocalePage::save()
         progDlg.setFixedWidth(300);
         progDlg.setRange(0, 100);
         progDlg.show();
-        QTimer *timer = new QTimer(this);
+        auto *timer = new QTimer(this);
         auto currentValue = 0;
         progDlg.setValue(currentValue);
         connect(timer, SIGNAL(timeout()), this, SLOT(updateProgressDialog()));
@@ -409,19 +409,27 @@ LocalePage::save()
         {
             // tr("You might have to restart the graphical environment to apply the new settings...")
             qDebug() << "Locale changes succesfully set";
+
+            //Here we gonna stop the dialog and show some message to user let them know the operation is completed
+            //耗时操作完成后，关闭进度对话框
+            timer->stop();
+            currentValue = 100;
+            progDlg.setValue(currentValue);//进度达到最大值
+            progDlg.close();//关闭进度对话框
+            // TODO: Show result when operation is completed
         }
         else
         {
+            timer->stop();
+            currentValue = 100;
+            progDlg.setValue(currentValue);//进度达到最大值
+            progDlg.close();//关闭进度对话框
+            // TODO: Show result when operation is completed
             // QString(tr("Failed to set locale!")
             qDebug() << "Failed to set locale";
         }
 
-        //耗时操作完成后，关闭进度对话框
-        timer->stop();
-        if(currentValue != 100)
-            currentValue = 100;
-        progDlg.setValue(currentValue);//进度达到最大值
-        progDlg.close();//关闭进度对话框
+
 
         load();
     }
