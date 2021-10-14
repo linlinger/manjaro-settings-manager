@@ -402,7 +402,7 @@ LocalePage::save()
 
 
 
-        // TODO: Progress UI
+        // TODO: messagebox when operation is done
         KAuth::Action installAction( QLatin1String( "org.spanningtree.msm.locale.save" ) );
         installAction.setHelperId( QLatin1String( "org.spanningtree.msm.locale" ) );
         installAction.setArguments( args );
