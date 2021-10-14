@@ -384,9 +384,9 @@ LocalePage::save()
         args["localeList"] = localeList;
         //Adding progress UI
         QProgressDialog progDlg;
-        progDlg.setWindowTitle("Please wait...");
+        progDlg.setWindowTitle("Please wait while applying changes...");
         progDlg.setFixedWidth(300);
-        progDlg.setRange(0, 100);
+        progDlg.setRange(0, 0);
         progDlg.show();
         auto *timer = new QTimer(this);
         auto currentValue = 0;
