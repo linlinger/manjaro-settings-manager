@@ -33,6 +33,8 @@
 #include <QtWidgets/QMenu>
 
 #include <QDebug>
+#include <QProgressDialog>
+#include <QCoreApplication>
 
 LocalePage::LocalePage( QWidget* parent ) :
     PageWidget( parent ),
@@ -380,6 +382,22 @@ LocalePage::save()
             localeList << QString( "LC_IDENTIFICATION=%1" ).arg( m_enabledLocalesModel->identification() );
 
         args["localeList"] = localeList;
+        //Adding progress UI
+        QProgressDialog progDlg;
+        progDlg.setWindowTitle("Please wait...");
+        progDlg.setFixedWidth(300);
+        progDlg.setRange(0, 100);
+        progDlg.show();
+        QTimer *timer = new QTimer(this);
+        auto currentValue = 0;
+        progDlg.setValue(currentValue);
+        connect(timer, SIGNAL(timeout()), this, SLOT(updateProgressDialog()));
+        timer->start(100);//开启一个没有终点的定时器
+        QCoreApplication::processEvents();//避免界面冻结
+        if(progDlg.wasCanceled())
+            progDlg.setHidden(true);//隐藏对话框
+
+
 
         // TODO: Progress UI
         KAuth::Action installAction( QLatin1String( "org.spanningtree.msm.locale.save" ) );
@@ -397,6 +415,13 @@ LocalePage::save()
             // QString(tr("Failed to set locale!")
             qDebug() << "Failed to set locale";
         }
+
+        //耗时操作完成后，关闭进度对话框
+        timer->stop();
+        if(currentValue != 100)
+            currentValue = 100;
+        progDlg.setValue(currentValue);//进度达到最大值
+        progDlg.close();//关闭进度对话框
 
         load();
     }
