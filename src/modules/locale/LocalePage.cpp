@@ -430,6 +430,7 @@ LocalePage::save()
             // TODO: Show result when operation is completed
             // QString(tr("Failed to set locale!")
             qDebug() << "Failed to set locale";
+            // TODO : Show user that operation is failed
         }
 
 
