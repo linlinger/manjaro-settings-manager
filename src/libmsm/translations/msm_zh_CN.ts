@@ -641,6 +641,12 @@ Would you like to continue?</source>
 <context>
     <name>LocalePage</name>
     <message>
+        <location filename="../../modules/locale/LocalePage.cpp" line="391"/>
+        <source>Please wait while applying changes...</source>
+        <translatorcomment>更改进行中……请耐心等待</translatorcomment>
+        <translation></translation>
+    </message>
+    <message>
         <location filename="../../modules/locale/LocalePage.cpp" line="424"/>
         <source>Done!</source>
         <translation>完成！</translation>
