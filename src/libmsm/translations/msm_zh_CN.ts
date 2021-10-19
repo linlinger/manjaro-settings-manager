@@ -639,6 +639,29 @@ Would you like to continue?</source>
     </message>
 </context>
 <context>
+    <name>LocalePage</name>
+    <message>
+        <location filename="../../modules/locale/LocalePage.cpp" line="424"/>
+        <source>Done!</source>
+        <translation>完成！</translation>
+    </message>
+    <message>
+        <location filename="../../modules/locale/LocalePage.cpp" line="424"/>
+        <source>Operation succeed. Please log out and re-login to apply changes </source>
+        <translation>操作成功，注销并重新登陆应用语言更改 </translation>
+    </message>
+    <message>
+        <location filename="../../modules/locale/LocalePage.cpp" line="437"/>
+        <source>Error!</source>
+        <translation>错误！</translation>
+    </message>
+    <message>
+        <location filename="../../modules/locale/LocalePage.cpp" line="437"/>
+        <source>Operation failed. Please try again </source>
+        <translation>操作失败。请重试 </translation>
+    </message>
+</context>
+<context>
     <name>MhwdCommon</name>
     <message>
         <location filename="../../modules/mhwd/MhwdCommon.cpp" line="39"/>
@@ -772,38 +795,34 @@ Would you like to continue?</source>
 <context>
     <name>Notifier</name>
     <message>
-        <location filename="../../notifier/notifier/Notifier.cpp" line="47"/>
         <location filename="../../notifier/notifier_kde/Notifier.cpp" line="47"/>
         <source>Kernels</source>
         <translation>内核</translation>
     </message>
     <message>
-        <location filename="../../notifier/notifier/Notifier.cpp" line="51"/>
+        <location filename="../../notifier/notifier/Notifier.cpp" line="48"/>
         <location filename="../../notifier/notifier_kde/Notifier.cpp" line="51"/>
         <source>Language packages</source>
         <translation>语言包</translation>
     </message>
     <message>
-        <location filename="../../notifier/notifier/Notifier.cpp" line="55"/>
+        <location filename="../../notifier/notifier/Notifier.cpp" line="52"/>
         <source>Quit</source>
         <translation>退出</translation>
     </message>
     <message>
-        <location filename="../../notifier/notifier/Notifier.cpp" line="59"/>
+        <location filename="../../notifier/notifier/Notifier.cpp" line="56"/>
         <location filename="../../notifier/notifier_kde/Notifier.cpp" line="56"/>
         <source>Options</source>
         <translation>选项</translation>
     </message>
     <message>
-        <location filename="../../notifier/notifier/Notifier.cpp" line="197"/>
-        <location filename="../../notifier/notifier/Notifier.cpp" line="236"/>
-        <location filename="../../notifier/notifier/Notifier.cpp" line="244"/>
-        <location filename="../../notifier/notifier/Notifier.cpp" line="297"/>
+        <location filename="../../notifier/notifier/Notifier.cpp" line="184"/>
         <source>SpanningTree Settings Manager</source>
         <translation>SpanningTree 设置管理器</translation>
     </message>
     <message numerus="yes">
-        <location filename="../../notifier/notifier/Notifier.cpp" line="198"/>
+        <location filename="../../notifier/notifier/Notifier.cpp" line="185"/>
         <location filename="../../notifier/notifier_kde/Notifier.cpp" line="187"/>
         <source>%n new additional language package(s) available</source>
         <translation>
@@ -811,19 +830,16 @@ Would you like to continue?</source>
         </translation>
     </message>
     <message>
-        <location filename="../../notifier/notifier/Notifier.cpp" line="237"/>
         <location filename="../../notifier/notifier_kde/Notifier.cpp" line="226"/>
         <source>Running an unsupported kernel, please update.</source>
         <translation>当前运行着不受支持的内核，请升级您的系统内核。</translation>
     </message>
     <message>
-        <location filename="../../notifier/notifier/Notifier.cpp" line="245"/>
         <location filename="../../notifier/notifier_kde/Notifier.cpp" line="234"/>
         <source>Unsupported kernel installed in your system, please remove it.</source>
         <translation>在系统中检测到不受支持的内核，请移除此内核。</translation>
     </message>
     <message>
-        <location filename="../../notifier/notifier/Notifier.cpp" line="298"/>
         <location filename="../../notifier/notifier_kde/Notifier.cpp" line="287"/>
         <source>Newer kernel is available, please update.</source>
         <translation>新内核可用，请进行升级。</translation>
@@ -1059,12 +1075,12 @@ Would you like to continue?</source>
         <translation>自动设置时间与日期</translation>
     </message>
     <message>
-        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="154"/>
+        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="142"/>
         <source>Time Zone</source>
         <translation>时区</translation>
     </message>
     <message>
-        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="203"/>
+        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="191"/>
         <source>Change Time Zone</source>
         <translation>更改时区</translation>
     </message>
@@ -1079,47 +1095,47 @@ Would you like to continue?</source>
         <translation>时间：</translation>
     </message>
     <message>
-        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="120"/>
+        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="86"/>
         <source>Date:</source>
         <translation>日期：</translation>
     </message>
     <message>
-        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="86"/>
+        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="123"/>
         <source>Hardware clock:</source>
         <translation>硬件时钟：</translation>
     </message>
     <message>
-        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="93"/>
+        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="109"/>
         <source>Universal time:</source>
         <translation>标准时间：</translation>
     </message>
     <message>
-        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="171"/>
+        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="159"/>
         <source>Time zone:</source>
         <translation>时区：</translation>
     </message>
     <message>
-        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="212"/>
+        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="200"/>
         <source>Country:</source>
         <translation>国家或地区：</translation>
     </message>
     <message>
-        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="252"/>
+        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="240"/>
         <source>Has daylight time?</source>
         <translation>是否有极昼？</translation>
     </message>
     <message>
-        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="282"/>
+        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="270"/>
         <source>Is daylight time?</source>
         <translation>是极昼吗？</translation>
     </message>
     <message>
-        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="312"/>
+        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="300"/>
         <source>Has transitions?</source>
         <translation>是否有夏令时？</translation>
     </message>
     <message>
-        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="323"/>
+        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="311"/>
         <source>Next transition:</source>
         <translation>下一次夏令时：</translation>
     </message>
@@ -1127,27 +1143,33 @@ Would you like to continue?</source>
 <context>
     <name>PageUsers</name>
     <message>
-        <location filename="../../modules/users/ui/PageUsers.ui" line="154"/>
+        <location filename="../../modules/users/ui/PageUsers.ui" line="136"/>
         <source>Image</source>
         <translation>用户头像</translation>
     </message>
     <message>
-        <location filename="../../modules/users/ui/PageUsers.ui" line="161"/>
+        <location filename="../../modules/users/ui/PageUsers.ui" line="143"/>
         <source>Username</source>
         <translation>用户名</translation>
     </message>
     <message>
-        <location filename="../../modules/users/ui/PageUsers.ui" line="168"/>
-        <source>Account Type</source>
-        <translation>账户类型</translation>
+        <location filename="../../modules/users/ui/PageUsers.ui" line="150"/>
+        <source>Account Type &amp; 
+ Manage Group</source>
+        <translation>账户类型 &amp; 
+用户组管理</translation>
     </message>
     <message>
-        <location filename="../../modules/users/ui/PageUsers.ui" line="175"/>
+        <source>Account Type</source>
+        <translation type="vanished">账户类型</translation>
+    </message>
+    <message>
+        <location filename="../../modules/users/ui/PageUsers.ui" line="158"/>
         <source>Password</source>
         <translation>密码</translation>
     </message>
     <message>
-        <location filename="../../modules/users/ui/PageUsers.ui" line="223"/>
+        <location filename="../../modules/users/ui/PageUsers.ui" line="206"/>
         <source>●●●●●●</source>
         <translation>●●●●●●</translation>
     </message>
