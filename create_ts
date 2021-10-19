@@ -1,3 +1,4 @@
 #! /bin/sh
 
-lupdate src -ts src/libmsm/translations/msm_en.ts
+echo "To update translation. please change this file. Change msm_zh_CN.ts to your locale."
+lupdate src -ts src/libmsm/translations/msm_zh_CN.ts
