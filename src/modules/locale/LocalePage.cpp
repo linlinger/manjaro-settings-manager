@@ -388,7 +388,7 @@ LocalePage::save()
         //Hide close button
         progDlg.setWindowFlags(progDlg.windowFlags() & ~Qt::WindowCloseButtonHint);
         disconnect(this, SIGNAL(canceled()), this, SLOT(cancel()));
-        progDlg.setWindowTitle("Please wait while applying changes...");
+        progDlg.setWindowTitle(tr("Please wait while applying changes..."));
         progDlg.setFixedWidth(300);
         progDlg.setRange(0, 0);
         progDlg.show();
