@@ -30,6 +30,7 @@
 #include <QtCore/QFile>
 #include <QtCore/QTextStream>
 #include <QtDBus/QDBusInterface>
+#include <QMessageBox>
 #include <QTimer>
 #include <QtWidgets/QMenu>
 
