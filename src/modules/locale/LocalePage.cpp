@@ -395,10 +395,10 @@ LocalePage::save()
         auto currentValue = 0;
         progDlg.setValue(currentValue);
         connect(timer, SIGNAL(timeout()), this, SLOT(updateProgressDialog()));
-        timer->start(100);//开启一个没有终点的定时器
-        QCoreApplication::processEvents();//避免界面冻结
+        timer->start(100);//Start a Endless timer
+        QCoreApplication::processEvents();//Avoid UI freeze
         if(progDlg.wasCanceled())
-            progDlg.setHidden(true);//隐藏对话框
+            progDlg.setHidden(true);//Hide the dialog
 
 
 
@@ -414,12 +414,16 @@ LocalePage::save()
             qDebug() << "Locale changes succesfully set";
 
             //Here we gonna stop the dialog and show some message to user let them know the operation is completed
-            //耗时操作完成后，关闭进度对话框
+            //When operation is done. Close the dialog
             timer->stop();
             currentValue = 100;
-            progDlg.setValue(currentValue);//进度达到最大值
-            progDlg.close();//关闭进度对话框
+            progDlg.setValue(currentValue);//Progress has gone 100%
+            progDlg.close();//Close dialog 
             // TODO: Show result when operation is completed
+
+            
+
+
         }
         else
         {
