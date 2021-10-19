@@ -421,7 +421,7 @@ LocalePage::save()
             progDlg.setValue(currentValue);//Progress has gone 100%
             progDlg.close();//Close dialog 
             // TODO: Show result when operation is completed
-            QMessageBox::information( this, tr( "Done!" ), QString( tr( "Operation succeed. Please log out and re-login to apply changes " ) + "\n" + errorMessage ), QMessageBox::Ok, QMessageBox::Ok );
+            QMessageBox::information( this, tr( "Done!" ), QString( tr( "Operation succeed. Please log out and re-login to apply changes " ) + "\n" ), QMessageBox::Ok, QMessageBox::Ok );
             
         }
         else
@@ -434,7 +434,7 @@ LocalePage::save()
             // QString(tr("Failed to set locale!")
             qDebug() << "Failed to set locale";
             // TODO : Show user that operation is failed
-            QMessageBox::warning( this, tr( "Error!" ), QString( tr( "Operation failed. Please try again " ) + "\n" + errorMessage ), QMessageBox::Ok, QMessageBox::Ok );
+            QMessageBox::warning( this, tr( "Error!" ), QString( tr( "Operation failed. Please try again " ) + "\n" ), QMessageBox::Ok, QMessageBox::Ok );
         }
 
 
