@@ -634,6 +634,29 @@ Would you like to continue?</source>
     </message>
 </context>
 <context>
+    <name>LocalePage</name>
+    <message>
+        <location filename="../../modules/locale/LocalePage.cpp" line="424"/>
+        <source>Done!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../modules/locale/LocalePage.cpp" line="424"/>
+        <source>Operation succeed. Please log out and re-login to apply changes </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../modules/locale/LocalePage.cpp" line="437"/>
+        <source>Error!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../modules/locale/LocalePage.cpp" line="437"/>
+        <source>Operation failed. Please try again </source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>MhwdCommon</name>
     <message>
         <location filename="../../modules/mhwd/MhwdCommon.cpp" line="39"/>
@@ -767,38 +790,34 @@ Would you like to continue?</source>
 <context>
     <name>Notifier</name>
     <message>
-        <location filename="../../notifier/notifier/Notifier.cpp" line="47"/>
         <location filename="../../notifier/notifier_kde/Notifier.cpp" line="47"/>
         <source>Kernels</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../notifier/notifier/Notifier.cpp" line="51"/>
+        <location filename="../../notifier/notifier/Notifier.cpp" line="48"/>
         <location filename="../../notifier/notifier_kde/Notifier.cpp" line="51"/>
         <source>Language packages</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../notifier/notifier/Notifier.cpp" line="55"/>
+        <location filename="../../notifier/notifier/Notifier.cpp" line="52"/>
         <source>Quit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../notifier/notifier/Notifier.cpp" line="59"/>
+        <location filename="../../notifier/notifier/Notifier.cpp" line="56"/>
         <location filename="../../notifier/notifier_kde/Notifier.cpp" line="56"/>
         <source>Options</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../notifier/notifier/Notifier.cpp" line="197"/>
-        <location filename="../../notifier/notifier/Notifier.cpp" line="236"/>
-        <location filename="../../notifier/notifier/Notifier.cpp" line="244"/>
-        <location filename="../../notifier/notifier/Notifier.cpp" line="297"/>
+        <location filename="../../notifier/notifier/Notifier.cpp" line="184"/>
         <source>SpanningTree Settings Manager</source>
         <translation type="unfinished"></translation>
     </message>
     <message numerus="yes">
-        <location filename="../../notifier/notifier/Notifier.cpp" line="198"/>
+        <location filename="../../notifier/notifier/Notifier.cpp" line="185"/>
         <location filename="../../notifier/notifier_kde/Notifier.cpp" line="187"/>
         <source>%n new additional language package(s) available</source>
         <translation type="unfinished">
@@ -807,19 +826,16 @@ Would you like to continue?</source>
         </translation>
     </message>
     <message>
-        <location filename="../../notifier/notifier/Notifier.cpp" line="237"/>
         <location filename="../../notifier/notifier_kde/Notifier.cpp" line="226"/>
         <source>Running an unsupported kernel, please update.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../notifier/notifier/Notifier.cpp" line="245"/>
         <location filename="../../notifier/notifier_kde/Notifier.cpp" line="234"/>
         <source>Unsupported kernel installed in your system, please remove it.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../notifier/notifier/Notifier.cpp" line="298"/>
         <location filename="../../notifier/notifier_kde/Notifier.cpp" line="287"/>
         <source>Newer kernel is available, please update.</source>
         <translation type="unfinished"></translation>
@@ -1055,12 +1071,12 @@ Would you like to continue?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="154"/>
+        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="142"/>
         <source>Time Zone</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="203"/>
+        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="191"/>
         <source>Change Time Zone</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1075,47 +1091,47 @@ Would you like to continue?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="120"/>
+        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="86"/>
         <source>Date:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="86"/>
+        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="123"/>
         <source>Hardware clock:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="93"/>
+        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="109"/>
         <source>Universal time:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="171"/>
+        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="159"/>
         <source>Time zone:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="212"/>
+        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="200"/>
         <source>Country:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="252"/>
+        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="240"/>
         <source>Has daylight time?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="282"/>
+        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="270"/>
         <source>Is daylight time?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="312"/>
+        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="300"/>
         <source>Has transitions?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="323"/>
+        <location filename="../../modules/timedate/ui/PageTimeDate.ui" line="311"/>
         <source>Next transition:</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1123,27 +1139,28 @@ Would you like to continue?</source>
 <context>
     <name>PageUsers</name>
     <message>
-        <location filename="../../modules/users/ui/PageUsers.ui" line="154"/>
+        <location filename="../../modules/users/ui/PageUsers.ui" line="136"/>
         <source>Image</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../modules/users/ui/PageUsers.ui" line="161"/>
+        <location filename="../../modules/users/ui/PageUsers.ui" line="143"/>
         <source>Username</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../modules/users/ui/PageUsers.ui" line="168"/>
-        <source>Account Type</source>
+        <location filename="../../modules/users/ui/PageUsers.ui" line="150"/>
+        <source>Account Type &amp; 
+ Manage Group</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../modules/users/ui/PageUsers.ui" line="175"/>
+        <location filename="../../modules/users/ui/PageUsers.ui" line="158"/>
         <source>Password</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../modules/users/ui/PageUsers.ui" line="223"/>
+        <location filename="../../modules/users/ui/PageUsers.ui" line="206"/>
         <source>●●●●●●</source>
         <translation type="unfinished"></translation>
     </message>
