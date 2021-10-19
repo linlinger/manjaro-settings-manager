@@ -411,7 +411,7 @@ LocalePage::save()
         if ( job->exec() )
         {
             // tr("You might have to restart the graphical environment to apply the new settings...")
-            qDebug() << "Locale changes succesfully set";
+            qDebug() << "Locale changes successfully set";
 
             //Here we gonna stop the dialog and show some message to user let them know the operation is completed
             //When operation is done. Close the dialog
