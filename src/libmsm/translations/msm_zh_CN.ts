@@ -642,8 +642,8 @@ Would you like to continue?</source>
     <name>LocalePage</name>
     <message>
         <location filename="../../modules/locale/LocalePage.cpp" line="391"/>
-        <source>Please wait while applying changes...</source>
-        <translatorcomment>在更改进行中的时候请耐心等待……</translatorcomment>
+        <source>Please wait while operation is in progress</source>
+        <translatorcomment>操作进行中，请耐心等待</translatorcomment>
         <translation></translation>
     </message>
     <message>
