@@ -387,7 +387,7 @@ LocalePage::save()
         QProgressDialog progDlg;
         //Hide close button
         progDlg.setWindowFlags(progDlg.windowFlags());
-        progDlg.setWindowTitle( QString( tr("Please wait while operation is in progress"));
+        progDlg.setWindowTitle( QString( tr("Please wait while operation is in progress")));
         progDlg.setFixedWidth(300);
         progDlg.setRange(0, 0);
         progDlg.show();
