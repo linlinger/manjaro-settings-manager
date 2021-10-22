@@ -11,7 +11,7 @@ Name[ro]=Gestionar de Setări SpanningTree
 Name[sk]=Správca nastavení systému SpanningTree
 Name[zh_CN]=SpanningTree设置管理器
 
-Comment=Graphical Settings Manager for SpanningTree
+Comment=Graphical Settings Manager for SpanningTree Linux
 Comment[ca]=Gestor de configuració gràfic de SpanningTree
 Comment[da]=Grafisk indstillingshåndtering til SpanningTree
 Comment[de]=Grafische Einstellungsverwaltung für SpanningTree
@@ -21,9 +21,10 @@ Comment[fr]=Gestionnaire graphique de paramètres pour SpanningTree
 Comment[pl]=Graficzny menedżer ustawień systemu SpanningTree
 Comment[ro]=Gestionar grafic de setări de sistem pt. SpanningTree
 Comment[sk]=Grafický správca nastavení pre systém SpanningTree
+Comment[zh_CN]=SpanningTree Linux的设置管理器
 
 Exec=spanningtree-settings-manager
-Icon=preferences-desktop
+Icon=spanningtree-preferences
 Terminal=false
 Type=Application
 Categories=Settings;DesktopSettings;X-LXDE-Settings;X-KDE-Settings;X-XFCE-SettingsDialog;X-XFCE-SystemSettings;
