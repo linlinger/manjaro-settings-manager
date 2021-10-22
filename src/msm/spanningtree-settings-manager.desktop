@@ -24,7 +24,7 @@ Comment[sk]=Grafický správca nastavení pre systém SpanningTree
 Comment[zh_CN]=SpanningTree Linux的设置管理器
 
 Exec=spanningtree-settings-manager
-Icon=spanningtree-preferences
+Icon=spanningtree-settings-manager
 Terminal=false
 Type=Application
 Categories=Settings;DesktopSettings;X-LXDE-Settings;X-KDE-Settings;X-XFCE-SettingsDialog;X-XFCE-SystemSettings;
