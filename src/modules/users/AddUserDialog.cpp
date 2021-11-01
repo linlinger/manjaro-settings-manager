@@ -104,7 +104,7 @@ void AddUserDialog::buttonCreate_clicked()
     installActionAdd.setHelperId( QLatin1String( "org.spanningtree.msm.users" ) );
     QVariantMap args;
     QString defaultUserGroups {"video,audio,power,optical,network,lp,scanner,sys"};
-    args["arguments"] = QStringList() << "-m" << "-p" << "" << "-U" << "-G" << defaultUserGroups << username  << "-s /bin/zsh";
+    args["arguments"] = QStringList() << "-m" << "-p" << "" << "-U" << "-G" << defaultUserGroups << username  << "-s" << "/bin/zsh";
     installActionAdd.setArguments( args );
     KAuth::ExecuteJob* jobAdd = installActionAdd.execute();
     connect( jobAdd, &KAuth::ExecuteJob::newData,
