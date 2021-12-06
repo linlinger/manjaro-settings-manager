@@ -120,6 +120,7 @@ UsersCommon::loadUsers( ListWidget* listWidget )
         else
             item->setIcon( QIcon( ":/icons/user.png" ) );
     }
+    listWidget->takeItem(0);
 }
 
 
