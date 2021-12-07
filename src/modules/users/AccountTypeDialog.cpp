@@ -121,8 +121,8 @@ AccountTypeDialog::checkSudoersFile()
     while ( !in.atEnd() )
     {
         QString line = in.readLine().split( "#", QString::KeepEmptyParts ).first().remove( " " );
-
-        if ( line == "%" + m_adminGroup + "ALL=(ALL)ALL" )
+        //Assuming the admin group is wheel
+        if ( line == "%wheelALL=(ALL)ALL" )
         {
             found = true;
             break;
