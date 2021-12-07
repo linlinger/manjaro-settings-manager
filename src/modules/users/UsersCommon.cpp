@@ -250,13 +250,13 @@ UsersCommon::setupUserData( Ui::PageUsers* ui, QListWidgetItem* current )
 
     if ( !current )
     {
-        ui->buttonImage->setIcon( QIcon( ":/icons/user.png" ) );
+        ui->userAvatarImage->setIcon( QIcon( ":/icons/user.png" ) );
         ui->labelUsername->setText( "" );
         ui->userWidget->setEnabled( false );
         return;
     }
 
-    ui->buttonImage->setIcon( current->icon() );
+    ui->userAvatarImage->setIcon( current->icon() );
     ui->labelUsername->setText( current->text() );
     ui->userWidget->setEnabled( true );
 

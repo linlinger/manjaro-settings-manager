@@ -40,7 +40,7 @@ UsersPage::UsersPage( QWidget* parent ) :
         Q_UNUSED( previous );
         UsersCommon::setupUserData( ui, current );
     } );
-    connect( ui->buttonImage, &FlatButton::clicked,
+    connect( ui->userAvatarImage, &FlatButton::clicked,
              [=]( bool checked )
     {
         Q_UNUSED( checked );

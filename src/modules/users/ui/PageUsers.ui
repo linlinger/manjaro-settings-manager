@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>600</width>
+    <width>602</width>
     <height>440</height>
    </rect>
   </property>
@@ -116,7 +116,7 @@
       <property name="spacing">
        <number>0</number>
       </property>
-      <property name="margin">
+      <property name="margin" stdset="0">
        <number>0</number>
       </property>
       <item>
@@ -127,35 +127,27 @@
         <property name="verticalSpacing">
          <number>23</number>
         </property>
-        <property name="margin">
-         <number>30</number>
-        </property>
-        <item row="0" column="0">
-         <widget class="QLabel" name="label">
-          <property name="text">
-           <string>Image</string>
+        <item row="3" column="1">
+         <widget class="FlatButton" name="buttonPassword">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
           </property>
-         </widget>
-        </item>
-        <item row="1" column="0">
-         <widget class="QLabel" name="label_3">
-          <property name="text">
-           <string>Username</string>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>30</height>
+           </size>
           </property>
-         </widget>
-        </item>
-        <item row="2" column="0">
-         <widget class="QLabel" name="label_4">
-          <property name="text">
-           <string>Account Type &amp; 
- Manage Group</string>
+          <property name="styleSheet">
+           <string notr="true">padding-left: 7px;
+padding-right: 7px;
+text-align:left;</string>
           </property>
-         </widget>
-        </item>
-        <item row="3" column="0">
-         <widget class="QLabel" name="label_2">
           <property name="text">
-           <string>Password</string>
+           <string>●●●●●●</string>
           </property>
          </widget>
         </item>
@@ -183,32 +175,8 @@ text-align:left;</string>
           </property>
          </widget>
         </item>
-        <item row="3" column="1">
-         <widget class="FlatButton" name="buttonPassword">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
-          </property>
-          <property name="minimumSize">
-           <size>
-            <width>0</width>
-            <height>30</height>
-           </size>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">padding-left: 7px;
-padding-right: 7px;
-text-align:left;</string>
-          </property>
-          <property name="text">
-           <string>●●●●●●</string>
-          </property>
-         </widget>
-        </item>
         <item row="0" column="1">
-         <widget class="FlatButton" name="buttonImage">
+         <widget class="FlatButton" name="userAvatarImage">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
@@ -244,6 +212,55 @@ text-align:left;</string>
            <string notr="true">padding-left: 7px;
 padding-right: 7px;
 text-align:left;</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="accounttypeLabel">
+          <property name="text">
+           <string>Account Type &amp; 
+ Manage Group</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="userAvatar">
+          <property name="text">
+           <string>Image</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="autologinLabel">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string>autologin</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="passwordLabel">
+          <property name="text">
+           <string>Password</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="usernameLabel">
+          <property name="text">
+           <string>Username</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QCheckBox" name="autologinStatus">
+          <property name="enabled">
+           <bool>false</bool>
           </property>
           <property name="text">
            <string/>
